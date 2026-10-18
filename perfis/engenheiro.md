@@ -3,10 +3,12 @@
 > Preencha os campos `[PREENCHER]`.
 
 ## Dados
-- @: [PREENCHER]
-- Modalidade: [civil / elétrica / outra] — CREA nº: [PREENCHER] (deve aparecer na bio)
-- Serviços: [ex.: projetos residenciais, MCMV, regularização, alvará, memorial descritivo, ART, laudos, acompanhamento de obra]
-- Região de atuação: [PREENCHER]
+- @eng.aliff
+- Engenheiro Aliff Stefano — CREA-MS 68001 (deve aparecer na bio)
+- Modalidade: [PREENCHER — civil?]
+- Serviços: **do projeto à construção e execução** — projetos, aprovação/documentação (alvará, ART, memorial descritivo), construção e execução de obra. [CONFIRMAR: MCMV? regularização? laudos?]
+- Diferencial a explorar: entrega completa — o cliente resolve tudo com um só profissional.
+- Região de atuação: [PREENCHER — provavelmente Itaquiraí, Eldorado, Caarapó e região/MS?]
 - Ticket médio / tipo de cliente ideal: [PREENCHER]
 - Canal de conversão: [WhatsApp / formulário]
 

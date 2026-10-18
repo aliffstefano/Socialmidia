@@ -3,8 +3,8 @@
 > Preencha os campos `[PREENCHER]`.
 
 ## Dados
-- @: [PREENCHER]
-- Quem eu sou em 1 frase: [ex.: engenheiro e empresário do setor de autoescolas que...]
+- @aliffstefano
+- Quem eu sou em 1 frase: Aliff Stefano — engenheiro (CREA-MS 68001) e empresário, dono do CFC Nova Alvorada (Itaquiraí, Eldorado e Caarapó/MS) e criador do CFC Inteligente. [AJUSTAR]
 - Objetivo do perfil: [autoridade / networking / atrair clientes para os negócios / marca pessoal]
 - Assuntos que eu topo mostrar: [família? rotina? empreendedorismo? treino? fé? viagens?]
 - Assuntos proibidos: [PREENCHER]
@@ -21,5 +21,5 @@ Autêntico, primeira pessoa, bastidores reais. Menos "post perfeito", mais hist�
 3. **Vida** — rotina, valores, momentos pessoais (na dose que eu escolher).
 
 ## Ponte com os outros perfis
-O pessoal é o "hub": apresenta os negócios de forma natural (collab, menção, Stories),
+O pessoal é o "hub" (@eng.aliff, @cfcnovaalvorada... e o futuro CFC Inteligente): apresenta os negócios de forma natural (collab, menção, Stories),
 sem virar perfil de vendas.

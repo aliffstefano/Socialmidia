@@ -3,8 +3,17 @@
 > Preencha os campos `[PREENCHER]`. Quanto mais real, melhor o conteúdo.
 
 ## Dados
-- @ do(s) perfil(is): [PREENCHER — uma linha por unidade]
-- Cidade(s)/bairros atendidos: [PREENCHER]
+- Marca: **CFC Nova Alvorada** — 3 unidades, cada uma com perfil próprio:
+  - @cfcnovaalvoradaitaquirai — Itaquiraí/MS
+  - @cfcnovaalvoradaeldorado — Eldorado/MS
+  - @cfcnovaalvoradacaarapo — Caarapó/MS
+- Estado: Mato Grosso do Sul (Detran-MS)
+- Estratégia entre unidades: mesma identidade visual e mesmos roteiros-base, mas cada perfil
+  com o nome da sua cidade no gancho, texto na tela, legenda e localização. Usar **collab**
+  (post em conjunto) entre as 3 contas para somar alcance em conteúdos que servem às 3 cidades.
+- Contexto local (hipóteses a confirmar com o usuário): cidades pequenas do interior, forte
+  presença rural/agro — categoria A (moto) e mudança para C/D/E podem ter peso grande;
+  boca a boca e rosto conhecido do instrutor valem muito.
 - Categorias: [A, B, AB, D, E, adição, mudança de categoria, reciclagem, aulas para habilitados]
 - Diferenciais reais: [ex.: frota nova, carro automático, instrutora mulher, horário noturno, parcelamento]
 - Preço/condições que podem ser divulgados: [PREENCHER]
