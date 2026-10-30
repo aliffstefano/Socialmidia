@@ -24,12 +24,13 @@ Dados de desempenho tirados dos Insights reais via API da Meta.
 | `2026-11-dia-de-gravacao.md` | Roteiro da sessão de 1h com o Aliff (eng + CFC Inteligente) |
 | `2026-11-black-friday.md` | Plano da Black Friday (ofertas ainda a definir) |
 | `2026-10-31-stories-halloween-saci.md` + `artes/2026-10-31/` | Stories de 31/10 com artes prontas |
-| `artes/variacoes-azul/` | Estudos de estilo (escolhido: **V2 — fundo azul sólido**) |
+| `artes/variacoes-azul/` | Estudos de layout (escolhido: **V2**); azul descartado |
+| `artes/variacoes-vermelho/` | V2 com o logo original: branco, preto, vermelho, azul |
 
 ## Regras que valem para tudo (decididas pelo dono)
 
 **Autoescolas**
-- **Cor da marca: azul royal #0033CC + preto + branco. Não usar vermelho.** Estilo de arte padrão: V2 (fundo azul sólido, palavra-chave com destaque branco).
+- **Cor da marca: logo original (preto/branco + vermelho #C00204).** O teste com azul foi descartado pelos sócios. Layout padrão de arte: V2 (fundo sólido, palavra-chave com destaque). Cor de fundo em escolha: ver `artes/variacoes-vermelho/`.
 - **Não fazer conteúdo dizendo que "a autoescola não é mais obrigatória"** nos perfis das autoescolas.
 - **Baliza não é mais exigida na prova prática desde jan/2026.** Pode falar de baliza como habilidade da vida real, nunca como item da prova.
 - Prova prática: deixar o carro morrer **1 vez não reprova; 2 vezes reprova**.
