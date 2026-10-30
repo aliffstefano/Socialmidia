@@ -1,0 +1,57 @@
+{
+ "_aprovado": false,
+ "autoescola-eldorado": {
+  "nome": "Nova Alvorada Eldorado",
+  "para": "DYALOG_ELDORADO",
+  "stories": [
+   {
+    "hora": "19:00",
+    "arte": "conteudo/artes/2026-11-04/autoescola-eldorado-mito_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Mito / Verdade (a resposta sai amanhã)"
+   }
+  ]
+ },
+ "autoescola-caarapo": {
+  "nome": "Nova Alvorada Caarapó",
+  "para": "DYALOG_CAARAPO",
+  "stories": [
+   {
+    "hora": "19:00",
+    "arte": "conteudo/artes/2026-11-04/autoescola-caarapo-mito_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Mito / Verdade (a resposta sai amanhã)"
+   }
+  ]
+ },
+ "autoescola-itaquirai": {
+  "nome": "Nova Alvorada Itaquiraí",
+  "para": "DYALOG_ITAQUIRAI",
+  "stories": [
+   {
+    "hora": "19:00",
+    "arte": "conteudo/artes/2026-11-04/autoescola-itaquirai-mito_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Mito / Verdade (a resposta sai amanhã)"
+   }
+  ]
+ },
+ "eng.aliff": {
+  "nome": "@eng.aliff",
+  "para": "DYALOG_NUMERO",
+  "stories": [
+   {
+    "hora": "19:30",
+    "arte": "conteudo/artes/2026-11-04/eng-1-art_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Mito / Verdade"
+   },
+   {
+    "hora": "21:00",
+    "arte": "conteudo/artes/2026-11-04/eng-2-resposta.png",
+    "sticker": "Nenhum",
+    "opcoes": ""
+   }
+  ]
+ }
+}

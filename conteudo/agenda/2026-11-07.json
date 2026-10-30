@@ -1,0 +1,54 @@
+{
+ "_aprovado": false,
+ "autoescola-eldorado": {
+  "nome": "Nova Alvorada Eldorado",
+  "para": "DYALOG_ELDORADO",
+  "stories": [
+   {
+    "hora": "09:00",
+    "arte": "conteudo/artes/2026-11-07/autoescola-eldorado-placa_QUIZ.png",
+    "sticker": "Quiz",
+    "opcoes": "Opções: Velocidade máxima 40 km/h ✅(correta) / Velocidade mínima 40 km/h / Distância mínima 40 m / Peso máximo 40 t"
+   }
+  ],
+  "obs": "Eldorado fechada hoje: tudo bem postar, respostas na segunda."
+ },
+ "autoescola-caarapo": {
+  "nome": "Nova Alvorada Caarapó",
+  "para": "DYALOG_CAARAPO",
+  "stories": [
+   {
+    "hora": "09:00",
+    "arte": "conteudo/artes/2026-11-07/autoescola-caarapo-placa_QUIZ.png",
+    "sticker": "Quiz",
+    "opcoes": "Opções: Velocidade máxima 40 km/h ✅(correta) / Velocidade mínima 40 km/h / Distância mínima 40 m / Peso máximo 40 t"
+   }
+  ],
+  "obs": "Eldorado fechada hoje: tudo bem postar, respostas na segunda."
+ },
+ "autoescola-itaquirai": {
+  "nome": "Nova Alvorada Itaquiraí",
+  "para": "DYALOG_ITAQUIRAI",
+  "stories": [
+   {
+    "hora": "09:00",
+    "arte": "conteudo/artes/2026-11-07/autoescola-itaquirai-placa_QUIZ.png",
+    "sticker": "Quiz",
+    "opcoes": "Opções: Velocidade máxima 40 km/h ✅(correta) / Velocidade mínima 40 km/h / Distância mínima 40 m / Peso máximo 40 t"
+   }
+  ],
+  "obs": "Eldorado fechada hoje: tudo bem postar, respostas na segunda."
+ },
+ "cfcinteligente": {
+  "nome": "@cfcinteligente",
+  "para": "DYALOG_NUMERO",
+  "stories": [
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-11-07/cfcint-3autoescolas_LINK.png",
+    "sticker": "Link",
+    "opcoes": "Link: www.cfcinteligente.com.br · Texto: Peça uma demonstração · ideal: poste antes um print do painel (sem dados de alunos)"
+   }
+  ]
+ }
+}

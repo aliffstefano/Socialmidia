@@ -1,0 +1,69 @@
+{
+ "_aprovado": false,
+ "autoescola-eldorado": {
+  "nome": "Nova Alvorada Eldorado",
+  "para": "DYALOG_ELDORADO",
+  "stories": [
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-06/autoescola-eldorado-1-medo_SLIDER.png",
+    "sticker": "Emoji slider 😨",
+    "opcoes": "Pergunta: Quanto medo você tem de dirigir no trânsito?"
+   },
+   {
+    "hora": "19:00",
+    "arte": "conteudo/artes/2026-11-06/autoescola-eldorado-2-whatsapp_LINK.png",
+    "sticker": "Link",
+    "opcoes": "Link: WhatsApp da unidade (wa.me/55DDDNÚMERO) · Texto: Chamar no WhatsApp"
+   }
+  ]
+ },
+ "autoescola-caarapo": {
+  "nome": "Nova Alvorada Caarapó",
+  "para": "DYALOG_CAARAPO",
+  "stories": [
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-06/autoescola-caarapo-1-medo_SLIDER.png",
+    "sticker": "Emoji slider 😨",
+    "opcoes": "Pergunta: Quanto medo você tem de dirigir no trânsito?"
+   },
+   {
+    "hora": "19:00",
+    "arte": "conteudo/artes/2026-11-06/autoescola-caarapo-2-whatsapp_LINK.png",
+    "sticker": "Link",
+    "opcoes": "Link: WhatsApp da unidade (wa.me/55DDDNÚMERO) · Texto: Chamar no WhatsApp"
+   }
+  ]
+ },
+ "autoescola-itaquirai": {
+  "nome": "Nova Alvorada Itaquiraí",
+  "para": "DYALOG_ITAQUIRAI",
+  "stories": [
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-06/autoescola-itaquirai-1-medo_SLIDER.png",
+    "sticker": "Emoji slider 😨",
+    "opcoes": "Pergunta: Quanto medo você tem de dirigir no trânsito?"
+   },
+   {
+    "hora": "19:00",
+    "arte": "conteudo/artes/2026-11-06/autoescola-itaquirai-2-whatsapp_LINK.png",
+    "sticker": "Link",
+    "opcoes": "Link: WhatsApp da unidade (wa.me/55DDDNÚMERO) · Texto: Chamar no WhatsApp"
+   }
+  ]
+ },
+ "eng.aliff": {
+  "nome": "@eng.aliff",
+  "para": "DYALOG_NUMERO",
+  "stories": [
+   {
+    "hora": "19:30",
+    "arte": "conteudo/artes/2026-11-06/eng-projeto_CAIXINHA.png",
+    "sticker": "Caixinha de perguntas",
+    "opcoes": "Pergunta: Qual sua dúvida sobre construir sua casa? · Se tiver foto de planta/obra (sem endereço), pode usar no lugar desta arte"
+   }
+  ]
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "_aprovado": false,
+ "autoescola-eldorado": {
+  "nome": "Nova Alvorada Eldorado",
+  "para": "DYALOG_ELDORADO",
+  "stories": [
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-03/autoescola-eldorado-bastidor_SLIDER.png",
+    "sticker": "Emoji slider 😬",
+    "opcoes": "Pergunta: Quão ansioso você está pra sua 1ª aula?"
+   }
+  ],
+  "obs": "Se der, troque esta arte por uma FOTO real do carro da autoescola com o mesmo texto."
+ },
+ "autoescola-caarapo": {
+  "nome": "Nova Alvorada Caarapó",
+  "para": "DYALOG_CAARAPO",
+  "stories": [
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-03/autoescola-caarapo-bastidor_SLIDER.png",
+    "sticker": "Emoji slider 😬",
+    "opcoes": "Pergunta: Quão ansioso você está pra sua 1ª aula?"
+   }
+  ],
+  "obs": "Se der, troque esta arte por uma FOTO real do carro da autoescola com o mesmo texto."
+ },
+ "autoescola-itaquirai": {
+  "nome": "Nova Alvorada Itaquiraí",
+  "para": "DYALOG_ITAQUIRAI",
+  "stories": [
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-03/autoescola-itaquirai-bastidor_SLIDER.png",
+    "sticker": "Emoji slider 😬",
+    "opcoes": "Pergunta: Quão ansioso você está pra sua 1ª aula?"
+   }
+  ],
+  "obs": "Se der, troque esta arte por uma FOTO real do carro da autoescola com o mesmo texto."
+ },
+ "eng.aliff": {
+  "nome": "@eng.aliff",
+  "para": "DYALOG_NUMERO",
+  "stories": [
+   {
+    "hora": "19:30",
+    "arte": "conteudo/artes/2026-11-03/eng-1-aluguel_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Sim / Não"
+   },
+   {
+    "hora": "19:35",
+    "arte": "conteudo/artes/2026-11-03/eng-2-chama_LINK.png",
+    "sticker": "Link",
+    "opcoes": "Link: seu WhatsApp · Texto: Quero sair do aluguel"
+   }
+  ]
+ },
+ "cfcinteligente": {
+  "nome": "@cfcinteligente",
+  "para": "DYALOG_NUMERO",
+  "stories": [
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-11-03/cfcint-tempo_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Matrícula / Cobrança / Agenda / Detran · anote o resultado"
+   }
+  ]
+ }
+}

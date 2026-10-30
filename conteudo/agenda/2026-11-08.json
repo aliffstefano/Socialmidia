@@ -1,0 +1,39 @@
+{
+ "_aprovado": false,
+ "autoescola-eldorado": {
+  "nome": "Nova Alvorada Eldorado",
+  "para": "DYALOG_ELDORADO",
+  "stories": [
+   {
+    "hora": "10:00",
+    "arte": "conteudo/artes/2026-11-08/autoescola-eldorado-cidade_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Centro / Bairro / Estrada / Ainda não dirijo"
+   }
+  ]
+ },
+ "autoescola-caarapo": {
+  "nome": "Nova Alvorada Caarapó",
+  "para": "DYALOG_CAARAPO",
+  "stories": [
+   {
+    "hora": "10:00",
+    "arte": "conteudo/artes/2026-11-08/autoescola-caarapo-cidade_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Centro / Bairro / Estrada / Ainda não dirijo"
+   }
+  ]
+ },
+ "autoescola-itaquirai": {
+  "nome": "Nova Alvorada Itaquiraí",
+  "para": "DYALOG_ITAQUIRAI",
+  "stories": [
+   {
+    "hora": "10:00",
+    "arte": "conteudo/artes/2026-11-08/autoescola-itaquirai-cidade_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Centro / Bairro / Estrada / Ainda não dirijo"
+   }
+  ]
+ }
+}

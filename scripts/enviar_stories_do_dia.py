@@ -1,7 +1,7 @@
 """Manda para quem posta em cada unidade as artes e instruções dos Stories do dia.
 
 Lê conteudo/agenda/AAAA-MM-DD.json (data de hoje em MS, ou a passada como argumento).
-Formato: {"autoescola-eldorado": {"para": "DYALOG_ELDORADO", "stories": [
+Formato: {"_aprovado": true, "autoescola-eldorado": {"para": "DYALOG_ELDORADO", "stories": [
            {"hora": "08:00", "arte": "conteudo/artes/2026-10-31/....png",
             "sticker": "Caixinha de perguntas", "opcoes": "..."}]}, ...}
 Uso: python3 scripts/enviar_stories_do_dia.py [AAAA-MM-DD]
@@ -23,7 +23,14 @@ def main():
         return
     agenda = json.load(open(caminho, encoding="utf-8"))
     dia = DIAS[datetime.strptime(hoje, "%Y-%m-%d").weekday()]
+    if not agenda.get("_aprovado"):
+        enviar(f"⏸️ Os Stories de hoje ({hoje[8:]}/{hoje[5:7]}) não foram aprovados, então não enviei para as unidades.",
+               "DYALOG_NUMERO")
+        print(f"Agenda de {hoje} não aprovada; nada enviado às unidades.")
+        return
     for perfil, cfg in agenda.items():
+        if perfil.startswith("_"):
+            continue
         stories = cfg["stories"]
         resumo = [f"📲 *Stories de hoje ({dia}, {hoje[8:]}/{hoje[5:7]}) — {cfg.get('nome', perfil)}*",
                   f"São {len(stories)} stories. As artes vêm logo abaixo, na ordem."]
