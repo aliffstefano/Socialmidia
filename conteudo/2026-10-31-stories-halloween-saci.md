@@ -1,6 +1,13 @@
 # Stories de 31/10/2026 (sábado): Halloween e Dia do Saci
 
-Nada para gravar. Monte no próprio Instagram ou no Canva.
+Artes prontas em `artes/2026-10-31/` (o nome do arquivo diz o sticker).
+
+**Horários (sábado: comércio fecha ao meio-dia)**
+| Horário | Autoescolas | @eng.aliff | @cfcinteligente |
+|---|---|---|---|
+| 8h | Story 1 (susto) | — | Story 1 (rotina) |
+| 13h | Story 2 (placa) — povo saindo do trabalho | — | — |
+| 19h–20h | Stories 3 e 4 (medo, Saci) | Stories 1 e 2 | — |
 
 ## Autoescolas (iguais nas 3 contas, troque a cidade)
 | Story | Texto na tela | Sticker |

@@ -34,7 +34,7 @@ Segunda, quarta e sexta. 13 dias. Objetivo: reativar o perfil e gerar conversa e
 
 | Dia | Data | Tema | Story 1 | Story 2 (opcional) | Sticker (tipo + pergunta + opções) | Precisa de |
 |---|---|---|---|---|---|---|
-| Seg | 02/11 | Dor: aluguel | Você paga aluguel hoje? | Quer saber se você consegue sair do aluguel? Me chama. | S1: enquete "Você paga aluguel?" (Sim / Não). S2: link para o WhatsApp | Fundo sólido ou foto de terreno. Link do WhatsApp [PREENCHER] |
+| Ter | 03/11 (feriado de Finados na seg) | Dor: aluguel | Você paga aluguel hoje? | Quer saber se você consegue sair do aluguel? Me chama. | S1: enquete "Você paga aluguel?" (Sim / Não). S2: link para o WhatsApp | Fundo sólido ou foto de terreno. Link do WhatsApp [PREENCHER] |
 | Qua | 04/11 | Mito ou verdade: ART | "ART é só papelada sem importância." Mito ou verdade? | Mito. A ART registra quem é o responsável técnico e protege quem constrói. | Enquete "Mito ou verdade?" (Mito / Verdade) | Arte com logo e nº do CREA-MS 68001. Se usar print de ART, apagar dados pessoais |
 | Sex | 06/11 | Bastidor + caixinha | 📸 Foto: "Essa casa começou assim: um projeto no papel." | Respondo as perguntas mais enviadas aqui. Manda a sua. | S1: caixinha "Qual sua dúvida sobre construir sua casa?" | Foto de planta ou obra (com autorização, sem endereço) |
 | Seg | 09/11 | Dor: terreno | Você já tem um terreno? | Quer saber se seu terreno pode virar casa? Me chama. | S1: enquete "Você já tem terreno?" (Sim, tenho / Não, ainda não). S2: link para o WhatsApp | Foto de terreno sem placa ou endereço. Link do WhatsApp |
