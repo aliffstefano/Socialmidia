@@ -1,32 +1,50 @@
-"""Envia um texto pelo WhatsApp usando a API Dyalog Connect.
+"""Envia texto (e opcionalmente uma imagem) pelo WhatsApp usando a API Dyalog Connect.
 
 Variáveis de ambiente:
-  DYALOG_TOKEN   token da instância (header X-Access-Token)
-  DYALOG_NUMERO  número de destino só com dígitos, com DDI e DDD (ex.: 5567999999999)
-Uso: python3 scripts/avisar_whatsapp.py "texto"   (ou o texto pela entrada padrão)
-Sem as variáveis configuradas, apenas avisa e sai sem erro.
+  DYALOG_TOKEN            token da instância (header X-Access-Token)
+  Destinos (número com DDI+DDD só dígitos, ou JID de grupo terminado em @g.us):
+  DYALOG_NUMERO           Aliff: alertas de destaque + resumo semanal
+  DYALOG_GRUPO_MARKETING  grupo do marketing: relatório semanal
+  DYALOG_ELDORADO / DYALOG_CAARAPO / DYALOG_ITAQUIRAI   quem posta os Stories de cada unidade
+Uso:
+  python3 scripts/avisar_whatsapp.py "texto"                      (vai para DYALOG_NUMERO)
+  python3 scripts/avisar_whatsapp.py --para DYALOG_ELDORADO --imagem arte.png "legenda"
+Destino não configurado: apenas avisa e sai sem erro.
 """
-import json, os, sys, urllib.error, urllib.request
+import argparse, base64, json, os, sys, urllib.error, urllib.request
 
-URL = "https://connect.dyalog.com.br/batepapo/enviar/texto"
+BASE = "https://connect.dyalog.com.br/batepapo/enviar"
 
 
-def enviar(texto):
-    token, numero = os.environ.get("DYALOG_TOKEN"), os.environ.get("DYALOG_NUMERO")
-    if not token or not numero:
-        print("WhatsApp não configurado (faltam DYALOG_TOKEN/DYALOG_NUMERO); aviso não enviado.")
-        return False
-    corpo = json.dumps({"numero": numero, "mensagem": texto}).encode()
-    req = urllib.request.Request(URL, data=corpo, method="POST",
+def enviar(texto, para="DYALOG_NUMERO", imagem=None):
+    token, destino = os.environ.get("DYALOG_TOKEN"), os.environ.get(para)
+    if not token or not destino:
+        print(f"WhatsApp não configurado (falta DYALOG_TOKEN ou {para}); não enviado.")
+        return None
+    corpo = {"chat_jid": destino, "grupo": True} if destino.endswith("@g.us") else {"numero": destino}
+    if imagem:
+        with open(imagem, "rb") as f:
+            corpo.update(arquivo_base64="data:image/png;base64," + base64.b64encode(f.read()).decode(),
+                         legenda=texto, nome_arquivo=os.path.basename(imagem))
+        url = f"{BASE}/imagem"
+    else:
+        corpo["mensagem"] = texto
+        url = f"{BASE}/texto"
+    req = urllib.request.Request(url, data=json.dumps(corpo).encode(), method="POST",
                                  headers={"X-Access-Token": token, "Content-Type": "application/json"})
     try:
-        resp = json.load(urllib.request.urlopen(req, timeout=30))
+        resp = json.load(urllib.request.urlopen(req, timeout=60))
     except urllib.error.HTTPError as e:
         resp = json.load(e)
-    print("enviado" if resp.get("sucesso") else f"falhou: {resp.get('erro')} {resp.get('mensagem')}")
-    return bool(resp.get("sucesso"))
+    ok = bool(resp.get("sucesso"))
+    print(f"{para}: " + ("enviado" if ok else f"falhou: {resp.get('erro')} {resp.get('mensagem')}"))
+    return ok
 
 
 if __name__ == "__main__":
-    texto = " ".join(sys.argv[1:]) or sys.stdin.read()
-    sys.exit(0 if enviar(texto.strip()) or not os.environ.get("DYALOG_TOKEN") else 1)
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--para", default="DYALOG_NUMERO")
+    ap.add_argument("--imagem")
+    ap.add_argument("texto", nargs="*")
+    a = ap.parse_args()
+    sys.exit(0 if enviar(" ".join(a.texto) or sys.stdin.read().strip(), a.para, a.imagem) is not False else 1)

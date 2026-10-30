@@ -1,0 +1,119 @@
+{
+ "autoescola-eldorado": {
+  "nome": "Nova Alvorada Eldorado",
+  "para": "DYALOG_ELDORADO",
+  "stories": [
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-10-31/autoescola-eldorado-1-susto_CAIXINHA.png",
+    "sticker": "Caixinha de perguntas",
+    "opcoes": "Pergunta da caixinha: Conta aqui 👇"
+   },
+   {
+    "hora": "13:00",
+    "arte": "conteudo/artes/2026-10-31/autoescola-eldorado-2-placa_QUIZ.png",
+    "sticker": "Quiz",
+    "opcoes": "Opções: Dê a preferência ✅(correta) / Parada obrigatória / Proibido estacionar / Siga em frente"
+   },
+   {
+    "hora": "19:00",
+    "arte": "conteudo/artes/2026-10-31/autoescola-eldorado-3-medo_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Examinador / Ficar nervoso / Trânsito / Tudo 😅"
+   },
+   {
+    "hora": "20:00",
+    "arte": "conteudo/artes/2026-10-31/autoescola-eldorado-4-saci_SLIDER-opcional.png",
+    "sticker": "Slider com 😂 (opcional)"
+   }
+  ],
+  "obs": "Eldorado não abre sábado e segunda é feriado: mensagens recebidas hoje só serão respondidas na terça."
+ },
+ "autoescola-caarapo": {
+  "nome": "Nova Alvorada Caarapó",
+  "para": "DYALOG_CAARAPO",
+  "stories": [
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-10-31/autoescola-caarapo-1-susto_CAIXINHA.png",
+    "sticker": "Caixinha de perguntas",
+    "opcoes": "Pergunta da caixinha: Conta aqui 👇"
+   },
+   {
+    "hora": "13:00",
+    "arte": "conteudo/artes/2026-10-31/autoescola-caarapo-2-placa_QUIZ.png",
+    "sticker": "Quiz",
+    "opcoes": "Opções: Dê a preferência ✅(correta) / Parada obrigatória / Proibido estacionar / Siga em frente"
+   },
+   {
+    "hora": "19:00",
+    "arte": "conteudo/artes/2026-10-31/autoescola-caarapo-3-medo_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Examinador / Ficar nervoso / Trânsito / Tudo 😅"
+   },
+   {
+    "hora": "20:00",
+    "arte": "conteudo/artes/2026-10-31/autoescola-caarapo-4-saci_SLIDER-opcional.png",
+    "sticker": "Slider com 😂 (opcional)"
+   }
+  ]
+ },
+ "autoescola-itaquirai": {
+  "nome": "Nova Alvorada Itaquiraí",
+  "para": "DYALOG_ITAQUIRAI",
+  "stories": [
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-10-31/autoescola-itaquirai-1-susto_CAIXINHA.png",
+    "sticker": "Caixinha de perguntas",
+    "opcoes": "Pergunta da caixinha: Conta aqui 👇"
+   },
+   {
+    "hora": "13:00",
+    "arte": "conteudo/artes/2026-10-31/autoescola-itaquirai-2-placa_QUIZ.png",
+    "sticker": "Quiz",
+    "opcoes": "Opções: Dê a preferência ✅(correta) / Parada obrigatória / Proibido estacionar / Siga em frente"
+   },
+   {
+    "hora": "19:00",
+    "arte": "conteudo/artes/2026-10-31/autoescola-itaquirai-3-medo_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Examinador / Ficar nervoso / Trânsito / Tudo 😅"
+   },
+   {
+    "hora": "20:00",
+    "arte": "conteudo/artes/2026-10-31/autoescola-itaquirai-4-saci_SLIDER-opcional.png",
+    "sticker": "Slider com 😂 (opcional)"
+   }
+  ]
+ },
+ "eng.aliff": {
+  "nome": "@eng.aliff",
+  "para": "DYALOG_NUMERO",
+  "stories": [
+   {
+    "hora": "19:00",
+    "arte": "conteudo/artes/2026-10-31/eng-1-voltando.png",
+    "sticker": "Nenhum"
+   },
+   {
+    "hora": "19:30",
+    "arte": "conteudo/artes/2026-10-31/eng-2-aluguel_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Sim / Não, já tenho casa"
+   }
+  ]
+ },
+ "cfcinteligente": {
+  "nome": "@cfcinteligente",
+  "para": "DYALOG_NUMERO",
+  "stories": [
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-10-31/cfcint-1-rotina_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Matrícula / Cobrança / Agenda / Detran"
+   }
+  ]
+ }
+}
