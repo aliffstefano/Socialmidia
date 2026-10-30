@@ -13,7 +13,7 @@ Destino não configurado: apenas avisa e sai sem erro.
 """
 import argparse, base64, json, os, sys, urllib.error, urllib.request
 
-BASE = "https://connect.dyalog.com.br/batepapo/enviar"
+BASE = "https://connect.dyalog.com.br/api/v1/batepapo/enviar"
 
 
 def enviar(texto, para="DYALOG_NUMERO", imagem=None):
@@ -31,11 +31,16 @@ def enviar(texto, para="DYALOG_NUMERO", imagem=None):
         corpo["mensagem"] = texto
         url = f"{BASE}/texto"
     req = urllib.request.Request(url, data=json.dumps(corpo).encode(), method="POST",
-                                 headers={"X-Access-Token": token, "Content-Type": "application/json"})
+                                 headers={"X-Access-Token": token, "Content-Type": "application/json",
+                                          "User-Agent": "socialmidia-agente/1.0"})  # Cloudflare bloqueia o UA padrão do urllib (erro 1010)
     try:
         resp = json.load(urllib.request.urlopen(req, timeout=60))
     except urllib.error.HTTPError as e:
-        resp = json.load(e)
+        bruto = e.read().decode(errors="replace")
+        try:
+            resp = json.loads(bruto)
+        except ValueError:
+            resp = {"erro": f"HTTP {e.code}", "mensagem": bruto[:200]}
     ok = bool(resp.get("sucesso"))
     print(f"{para}: " + ("enviado" if ok else f"falhou: {resp.get('erro')} {resp.get('mensagem')}"))
     return ok
