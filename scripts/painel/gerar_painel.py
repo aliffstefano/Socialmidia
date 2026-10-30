@@ -6,6 +6,8 @@ Depois publique <pasta_saida>/index.html como Artifact, com as miniaturas em `fi
 """
 import json, glob, os, sys, datetime
 from PIL import Image
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from expediente import ajustar
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SAIDA = os.path.abspath(sys.argv[1])
@@ -48,6 +50,8 @@ for f in sorted(glob.glob(os.path.join(RAIZ, "conteudo/agenda/20*.json"))):
         if chave.startswith("_") or chave not in PERFIS:
             continue
         grupo, rotulo = PERFIS[chave]
+        bloco = ajustar(data, chave, bloco)
+        quem = "robo" if bloco.get("auto") else ("aliff" if bloco.get("para") == "DYALOG_NUMERO" and grupo == "auto" else "")
         for s in bloco.get("stories", []):
             arte = os.path.join(RAIZ, s["arte"])
             thumb = None
@@ -61,7 +65,7 @@ for f in sorted(glob.glob(os.path.join(RAIZ, "conteudo/agenda/20*.json"))):
             itens.append({
                 "grupo": grupo, "perfil": rotulo, "hora": s.get("hora", ""),
                 "sticker": s.get("sticker", ""), "opcoes": s.get("opcoes", ""),
-                "codigo": s.get("codigo", ""), "thumb": thumb, "obs": bloco.get("obs", ""),
+                "codigo": s.get("codigo", ""), "thumb": thumb, "quem": quem, "obs": bloco.get("obs", ""),
             })
     itens.sort(key=lambda i: (i["hora"], i["grupo"]))
     dias.append({"data": data, "aprovado": bool(ag.get("_aprovado")), "itens": itens})

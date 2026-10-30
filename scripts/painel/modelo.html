@@ -200,6 +200,8 @@ function dias() {
       const info = el("div", "info");
       const p = el("div", "perfil", i.grupo === "auto" ? "Autoescola " + i.perfil : i.perfil);
       if (i.codigo) p.appendChild(el("span", "cod", i.codigo));
+      if (i.quem === "robo") p.appendChild(el("span", "tag ok", "Robô publica sozinho"));
+      if (i.quem === "aliff") p.appendChild(el("span", "tag esp", "Unidade fechada: Aliff posta"));
       info.appendChild(p);
       const s = el("div", "sticker"); s.append("Sticker: "); s.appendChild(el("b", null, i.sticker || "nenhum")); info.appendChild(s);
       if (i.opcoes) info.appendChild(el("div", "opcoes", i.opcoes));

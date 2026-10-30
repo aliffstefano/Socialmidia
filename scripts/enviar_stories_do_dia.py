@@ -11,6 +11,7 @@ from datetime import datetime, timedelta, timezone
 sys.path.insert(0, os.path.dirname(__file__))
 from avisar_whatsapp import enviar
 import ler_aprovacoes
+from expediente import ajustar
 
 RAIZ = os.path.join(os.path.dirname(__file__), "..")
 DIAS = ["segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo"]
@@ -33,8 +34,13 @@ def main():
                "DYALOG_NUMERO")
         print(f"Agenda de {hoje} não aprovada; nada enviado às unidades.")
         return
+    automaticos = []
     for perfil, cfg in agenda.items():
         if perfil.startswith("_"):
+            continue
+        cfg = ajustar(hoje, perfil, cfg)
+        if cfg.get("auto"):  # publicado pelo robô (scripts/publicar_story.py), ninguém precisa postar
+            automaticos += [f"{cfg.get('nome', perfil)} às {s['hora']}" for s in cfg["stories"]]
             continue
         stories = cfg["stories"]
         resumo = [f"📲 *Stories de hoje ({dia}, {hoje[8:]}/{hoje[5:7]}) — {cfg.get('nome', perfil)}*",
@@ -50,6 +56,8 @@ def main():
                 legenda += f"\n{s['opcoes']}"
             enviar(legenda, cfg["para"], os.path.join(RAIZ, s["arte"]))
             time.sleep(2)
+    if automaticos:
+        enviar("🤖 Hoje o robô publica sozinho, ninguém precisa postar:\n" + "\n".join(automaticos), "DYALOG_NUMERO")
 
 
 if __name__ == "__main__":
