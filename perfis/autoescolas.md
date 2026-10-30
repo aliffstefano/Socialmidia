@@ -8,6 +8,13 @@
   - @cfcnovaalvoradaeldorado — Eldorado/MS
   - @cfcnovaalvoradacaarapo — Caarapó/MS
 - Estado: Mato Grosso do Sul (Detran-MS)
+- **Horário de funcionamento** (confirmado em 30/10/2026):
+  | Unidade | Seg–Sex | Sábado |
+  |---|---|---|
+  | Eldorado | 08h–11h30 e 13h–18h | fechado |
+  | Caarapó | 07h–11h e 13h–18h | 08h–12h |
+  | Itaquiraí | 07h–11h e 13h–17h | 08h–12h |
+  Feriados: fechado. CTA de WhatsApp fora do horário → avisar quando a resposta vem ("respondemos [dia] a partir das [hora]").
 - Estratégia entre unidades: mesma identidade visual e mesmos roteiros-base, mas cada perfil
   com o nome da sua cidade no gancho, texto na tela, legenda e localização. Usar **collab**
   (post em conjunto) entre as 3 contas para somar alcance em conteúdos que servem às 3 cidades.

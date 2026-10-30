@@ -17,7 +17,7 @@
 
 | Dia | Data | Tema | Story 1 (texto na tela) | Story 2 (se houver) | Sticker (tipo + pergunta + opções) | Precisa de |
 |---|---|---|---|---|---|---|
-| Seg | 02/11 | Finados (feriado — unidades fechadas) | ⚫ "Hoje é Finados. Nossas unidades estão fechadas e voltamos amanhã, [PREENCHER horário]. Um dia de respeito e lembrança. 🕊️" | — | LINK do WhatsApp: "Deixe sua mensagem, respondemos amanhã" (sem quiz hoje — o quiz de placa vai para o banco reserva) | Nada |
+| Seg | 02/11 | Finados (feriado — unidades fechadas) | ⚫ "Hoje é Finados. Nossas unidades estão fechadas e voltamos amanhã (terça) às [HORA DA UNIDADE: Eldorado 8h · Caarapó 7h · Itaquiraí 7h]. Um dia de respeito e lembrança. 🕊️" | — | LINK do WhatsApp: "Deixe sua mensagem, respondemos amanhã" (sem quiz hoje — o quiz de placa vai para o banco reserva) | Nada |
 | Ter | 03/11 | Bastidor | "Bastidor da semana: o carro pronto pra aula 🚗" | — | Emoji slider 😬: "Quão ansioso você está pra sua primeira aula?" | 📸 precisa foto do dia (carro, instrutor ou pista) |
 | Qua | 04/11 | Mito ou verdade | "Mito ou verdade? 🤔" | — | ENQUETE: "Precisa ter carro próprio pra tirar a CNH?" · Mito / Verdade (resposta: Mito, no Qui) | Nada |
 | Qui | 05/11 | Resposta + caixinha | S1: "Mito ✅ Você aprende e faz a prova no carro da autoescola. Não precisa ter carro." | S2: "Qual sua dúvida sobre a CNH? 👇" | S1: repost da enquete de ontem (mostra resultado) · S2: CAIXINHA "Qual sua dúvida sobre a CNH?" | Nada |
