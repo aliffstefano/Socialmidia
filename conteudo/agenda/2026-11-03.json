@@ -8,7 +8,8 @@
     "hora": "12:30",
     "arte": "conteudo/artes/2026-11-03/autoescola-eldorado-bastidor_SLIDER.png",
     "sticker": "Emoji slider 😬",
-    "opcoes": "Pergunta: Quão ansioso você está pra sua 1ª aula?"
+    "opcoes": "Pergunta: Quão ansioso você está pra sua 1ª aula?",
+    "codigo": "03/11-A1"
    }
   ],
   "obs": "Se der, troque esta arte por uma FOTO real do carro da autoescola com o mesmo texto."
@@ -21,7 +22,8 @@
     "hora": "12:30",
     "arte": "conteudo/artes/2026-11-03/autoescola-caarapo-bastidor_SLIDER.png",
     "sticker": "Emoji slider 😬",
-    "opcoes": "Pergunta: Quão ansioso você está pra sua 1ª aula?"
+    "opcoes": "Pergunta: Quão ansioso você está pra sua 1ª aula?",
+    "codigo": "03/11-A1"
    }
   ],
   "obs": "Se der, troque esta arte por uma FOTO real do carro da autoescola com o mesmo texto."
@@ -34,7 +36,8 @@
     "hora": "12:30",
     "arte": "conteudo/artes/2026-11-03/autoescola-itaquirai-bastidor_SLIDER.png",
     "sticker": "Emoji slider 😬",
-    "opcoes": "Pergunta: Quão ansioso você está pra sua 1ª aula?"
+    "opcoes": "Pergunta: Quão ansioso você está pra sua 1ª aula?",
+    "codigo": "03/11-A1"
    }
   ],
   "obs": "Se der, troque esta arte por uma FOTO real do carro da autoescola com o mesmo texto."
@@ -47,13 +50,15 @@
     "hora": "19:30",
     "arte": "conteudo/artes/2026-11-03/eng-1-aluguel_ENQUETE.png",
     "sticker": "Enquete",
-    "opcoes": "Opções: Sim / Não"
+    "opcoes": "Opções: Sim / Não",
+    "codigo": "03/11-E1"
    },
    {
     "hora": "19:35",
     "arte": "conteudo/artes/2026-11-03/eng-2-chama_LINK.png",
     "sticker": "Link",
-    "opcoes": "Link: seu WhatsApp · Texto: Quero sair do aluguel"
+    "opcoes": "Link: seu WhatsApp · Texto: Quero sair do aluguel",
+    "codigo": "03/11-E2"
    }
   ]
  },
@@ -65,7 +70,8 @@
     "hora": "08:00",
     "arte": "conteudo/artes/2026-11-03/cfcint-tempo_ENQUETE.png",
     "sticker": "Enquete",
-    "opcoes": "Opções: Matrícula / Cobrança / Agenda / Detran · anote o resultado"
+    "opcoes": "Opções: Matrícula / Cobrança / Agenda / Detran · anote o resultado",
+    "codigo": "03/11-C1"
    }
   ]
  }

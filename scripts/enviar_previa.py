@@ -17,10 +17,13 @@ for data in sys.argv[1:]:
     enviar(f"🗓️ *Prévia dos Stories de {rotulo}* — para aprovar", "DYALOG_NUMERO")
     for chave, nome in NOMES.items():
         for i, s in enumerate(agenda.get(chave, {}).get("stories", []), 1):
-            legenda = f"*{rotulo} · {nome}*\n{i}. {s['hora']} · sticker: {s['sticker']}"
+            legenda = f"*[{s.get('codigo', rotulo)}]* {nome}\n{s['hora']} · sticker: {s['sticker']}"
             if s.get("opcoes"):
                 legenda += f"\n{s['opcoes']}"
             enviar(legenda, "DYALOG_NUMERO", os.path.join(RAIZ, s["arte"]))
             time.sleep(2)
-enviar("✅ Fim da prévia. Para aprovar, responda ao Claude: *APROVO* (tudo) ou *APROVO 03/11*; "
-       "para mudar algo: *AJUSTE 05/11: ...*", "DYALOG_NUMERO")
+enviar("✅ *Fim da prévia.* Responda aqui mesmo:\n"
+       "• *APROVO* — aprova tudo que não pediu ajuste\n"
+       "• *AJUSTE 05/11-A2: quero assim...* — refaço só essa arte e te mando de novo\n"
+       "• *APROVO 03/11* — aprova um dia específico\n"
+       "O código está no começo da legenda de cada arte.", "DYALOG_NUMERO")

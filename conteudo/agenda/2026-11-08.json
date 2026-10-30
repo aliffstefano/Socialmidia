@@ -8,7 +8,8 @@
     "hora": "10:00",
     "arte": "conteudo/artes/2026-11-08/autoescola-eldorado-cidade_ENQUETE.png",
     "sticker": "Enquete",
-    "opcoes": "Opções: Centro / Bairro / Estrada / Ainda não dirijo"
+    "opcoes": "Opções: Centro / Bairro / Estrada / Ainda não dirijo",
+    "codigo": "08/11-A1"
    }
   ]
  },
@@ -20,7 +21,8 @@
     "hora": "10:00",
     "arte": "conteudo/artes/2026-11-08/autoescola-caarapo-cidade_ENQUETE.png",
     "sticker": "Enquete",
-    "opcoes": "Opções: Centro / Bairro / Estrada / Ainda não dirijo"
+    "opcoes": "Opções: Centro / Bairro / Estrada / Ainda não dirijo",
+    "codigo": "08/11-A1"
    }
   ]
  },
@@ -32,7 +34,8 @@
     "hora": "10:00",
     "arte": "conteudo/artes/2026-11-08/autoescola-itaquirai-cidade_ENQUETE.png",
     "sticker": "Enquete",
-    "opcoes": "Opções: Centro / Bairro / Estrada / Ainda não dirijo"
+    "opcoes": "Opções: Centro / Bairro / Estrada / Ainda não dirijo",
+    "codigo": "08/11-A1"
    }
   ]
  }

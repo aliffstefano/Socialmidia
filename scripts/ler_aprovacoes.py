@@ -1,9 +1,10 @@
 """Lê as respostas do Aliff no WhatsApp (via webhook -> planilha) e aplica aprovações nas agendas.
 
 Comandos aceitos (mensagem do número DYALOG_NUMERO, maiúsculas ou minúsculas):
-  APROVO                 aprova as agendas pendentes dos 8 dias seguintes à mensagem (a prévia da semana)
-  APROVO 03/11           aprova só esse dia (pode listar vários: APROVO 03/11 04/11)
-  AJUSTE 05/11: ...      registra o pedido em conteudo/agenda/ajustes.md (e não aprova o dia)
+  APROVO                 aprova os dias dos 10 dias seguintes à mensagem que NÃO têm ajuste pendente
+  APROVO 03/11           aprova esse dia mesmo assim (pode listar vários: APROVO 03/11 04/11)
+  AJUSTE 05/11-A2: ...   registra o pedido em conteudo/agenda/ajustes.md; o dia fica travado até o ajuste
+                         ser feito e aprovado de novo (códigos: A=autoescolas, E=eng.aliff, C=cfcinteligente)
 Variável: WEBHOOK_URL (URL do Apps Script com ?chave=...). Sem ela, não faz nada.
 Uso: python3 scripts/ler_aprovacoes.py   → imprime o que mudou
 """
@@ -24,6 +25,19 @@ def mensagens(desde):
     req = urllib.request.Request(f"{url}{sep}desde={urllib.parse.quote(desde)}",
                                  headers={"User-Agent": "socialmidia-agente/1.0"})
     return json.load(urllib.request.urlopen(req, timeout=60))
+
+
+def dias_com_ajuste_pendente():
+    """Dias (AAAA-MM-DD) com linha '- [ ]' em ajustes.md."""
+    caminho = os.path.join(AGENDA, "ajustes.md")
+    if not os.path.exists(caminho):
+        return set()
+    dias = set()
+    for linha in open(caminho, encoding="utf-8"):
+        if linha.startswith("- [ ]"):
+            texto = linha.split("Z: ", 1)[-1]
+            dias |= {f"2026-{mm}-{dd}" for dd, mm in re.findall(r"(\d{2})/(\d{2})", texto)}
+    return dias
 
 
 def main():
@@ -48,9 +62,10 @@ def main():
         datas = [f"2026-{mm}-{dd}" for dd, mm in re.findall(r"(\d{2})/(\d{2})", texto)]
         if cmd.startswith("APROVO"):
             dia_msg = str(m["recebido_em"])[:10]
-            limite = (datetime.strptime(dia_msg, "%Y-%m-%d") + timedelta(days=8)).strftime("%Y-%m-%d")
+            limite = (datetime.strptime(dia_msg, "%Y-%m-%d") + timedelta(days=10)).strftime("%Y-%m-%d")
             alvos = [f"{AGENDA}/{d}.json" for d in datas] or \
-                    [f for f in glob.glob(f"{AGENDA}/2*.json") if max(hoje, dia_msg) <= os.path.basename(f)[:10] <= limite]
+                    [f for f in glob.glob(f"{AGENDA}/2*.json") if max(hoje, dia_msg) <= os.path.basename(f)[:10] <= limite
+                     and os.path.basename(f)[:10] not in dias_com_ajuste_pendente()]
             for f in alvos:
                 if os.path.exists(f):
                     ag = json.load(open(f, encoding="utf-8"))
@@ -59,6 +74,13 @@ def main():
                         json.dump(ag, open(f, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
                         print("aprovado:", os.path.basename(f)[:10])
         elif cmd.startswith("AJUSTE"):
+            for d in datas:  # dia com ajuste volta a ficar travado
+                f = f"{AGENDA}/{d}.json"
+                if os.path.exists(f):
+                    ag = json.load(open(f, encoding="utf-8"))
+                    if ag.get("_aprovado"):
+                        ag["_aprovado"] = False
+                        json.dump(ag, open(f, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
             with open(os.path.join(AGENDA, "ajustes.md"), "a", encoding="utf-8") as f:
                 f.write(f"- [ ] {m['recebido_em']}: {texto}\n")
             print("ajuste registrado:", texto[:80])

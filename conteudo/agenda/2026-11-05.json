@@ -8,13 +8,15 @@
     "hora": "08:00",
     "arte": "conteudo/artes/2026-11-05/autoescola-eldorado-1-resposta.png",
     "sticker": "Nenhum (se quiser, repost do resultado da enquete de ontem)",
-    "opcoes": ""
+    "opcoes": "",
+    "codigo": "05/11-A1"
    },
    {
     "hora": "19:00",
     "arte": "conteudo/artes/2026-11-05/autoescola-eldorado-2-duvida_CAIXINHA.png",
     "sticker": "Caixinha de perguntas",
-    "opcoes": "Pergunta: Qual sua dúvida sobre a CNH?"
+    "opcoes": "Pergunta: Qual sua dúvida sobre a CNH?",
+    "codigo": "05/11-A2"
    }
   ]
  },
@@ -26,13 +28,15 @@
     "hora": "08:00",
     "arte": "conteudo/artes/2026-11-05/autoescola-caarapo-1-resposta.png",
     "sticker": "Nenhum (se quiser, repost do resultado da enquete de ontem)",
-    "opcoes": ""
+    "opcoes": "",
+    "codigo": "05/11-A1"
    },
    {
     "hora": "19:00",
     "arte": "conteudo/artes/2026-11-05/autoescola-caarapo-2-duvida_CAIXINHA.png",
     "sticker": "Caixinha de perguntas",
-    "opcoes": "Pergunta: Qual sua dúvida sobre a CNH?"
+    "opcoes": "Pergunta: Qual sua dúvida sobre a CNH?",
+    "codigo": "05/11-A2"
    }
   ]
  },
@@ -44,13 +48,15 @@
     "hora": "08:00",
     "arte": "conteudo/artes/2026-11-05/autoescola-itaquirai-1-resposta.png",
     "sticker": "Nenhum (se quiser, repost do resultado da enquete de ontem)",
-    "opcoes": ""
+    "opcoes": "",
+    "codigo": "05/11-A1"
    },
    {
     "hora": "19:00",
     "arte": "conteudo/artes/2026-11-05/autoescola-itaquirai-2-duvida_CAIXINHA.png",
     "sticker": "Caixinha de perguntas",
-    "opcoes": "Pergunta: Qual sua dúvida sobre a CNH?"
+    "opcoes": "Pergunta: Qual sua dúvida sobre a CNH?",
+    "codigo": "05/11-A2"
    }
   ]
  },
@@ -62,7 +68,8 @@
     "hora": "08:00",
     "arte": "conteudo/artes/2026-11-05/cfcint-matricula_ENQUETE.png",
     "sticker": "Enquete",
-    "opcoes": "Opções: Sim / Não, digito tudo / Uso planilha · melhor ainda: grave 10s da tela lendo a CNH e poste antes desta"
+    "opcoes": "Opções: Sim / Não, digito tudo / Uso planilha · melhor ainda: grave 10s da tela lendo a CNH e poste antes desta",
+    "codigo": "05/11-C1"
    }
   ]
  }
