@@ -30,7 +30,7 @@ Dados de desempenho tirados dos Insights reais via API da Meta.
 ## Regras que valem para tudo (decididas pelo dono)
 
 **Autoescolas**
-- **Cor da marca: logo original (preto/branco + vermelho #C00204).** O teste com azul foi descartado pelos sócios. Layout padrão de arte: V2 (fundo sólido, palavra-chave com destaque). Cor de fundo em escolha: ver `artes/variacoes-vermelho/`.
+- **Cor da marca: logo original (preto/branco + vermelho #C00204).** O teste com azul foi descartado pelos sócios. **Padrão de arte (decidido em 30/10/2026):** layout V2, fonte Montserrat, palavra-chave com **sublinhado vermelho #C00204**. Fundo alterna: **preto** para conversa/emoção (caixinha, enquete, pergunta, bastidor, data especial) e **branco** para informação (quiz, dica, mito ou verdade, passo a passo). Modelo: `artes/2026-10-31/`.
 - **Não fazer conteúdo dizendo que "a autoescola não é mais obrigatória"** nos perfis das autoescolas.
 - **Baliza não é mais exigida na prova prática desde jan/2026.** Pode falar de baliza como habilidade da vida real, nunca como item da prova.
 - Prova prática: deixar o carro morrer **1 vez não reprova; 2 vezes reprova**.
