@@ -1,7 +1,7 @@
 """Lê as respostas do Aliff no WhatsApp (via webhook -> planilha) e aplica aprovações nas agendas.
 
 Comandos aceitos (mensagem do número DYALOG_NUMERO, maiúsculas ou minúsculas):
-  APROVO                 aprova todas as agendas futuras ainda pendentes
+  APROVO                 aprova as agendas pendentes dos 8 dias seguintes à mensagem (a prévia da semana)
   APROVO 03/11           aprova só esse dia (pode listar vários: APROVO 03/11 04/11)
   AJUSTE 05/11: ...      registra o pedido em conteudo/agenda/ajustes.md (e não aprova o dia)
 Variável: WEBHOOK_URL (URL do Apps Script com ?chave=...). Sem ela, não faz nada.
@@ -40,8 +40,10 @@ def main():
         cmd = texto.upper()
         datas = [f"2026-{mm}-{dd}" for dd, mm in re.findall(r"(\d{2})/(\d{2})", texto)]
         if cmd.startswith("APROVO"):
+            dia_msg = str(m["recebido_em"])[:10]
+            limite = (datetime.strptime(dia_msg, "%Y-%m-%d") + timedelta(days=8)).strftime("%Y-%m-%d")
             alvos = [f"{AGENDA}/{d}.json" for d in datas] or \
-                    [f for f in glob.glob(f"{AGENDA}/2*.json") if os.path.basename(f)[:10] >= hoje]
+                    [f for f in glob.glob(f"{AGENDA}/2*.json") if max(hoje, dia_msg) <= os.path.basename(f)[:10] <= limite]
             for f in alvos:
                 if os.path.exists(f):
                     ag = json.load(open(f, encoding="utf-8"))
