@@ -34,7 +34,14 @@ def main():
     ultimo = desde
     for m in mensagens(desde):
         ultimo = max(ultimo, str(m["recebido_em"]))
-        if numero[-8:] not in (m["remetente"] + m["chat_jid"]) or m["chat_jid"].endswith("@g.us"):
+        try:
+            dados = json.loads(m.get("bruto") or "{}").get("dados", {})
+        except ValueError:
+            dados = {}
+        # O Dyalog manda remetente/chat_jid como LID; o número real vem em remetente_numero / autor.numero.
+        quem = " ".join(str(x) for x in (dados.get("remetente_numero"), (dados.get("autor") or {}).get("numero"),
+                                          m["remetente"], m["chat_jid"]) if x)
+        if numero[-8:] not in quem or dados.get("grupo") or dados.get("enviado_por_mim") or m["chat_jid"].endswith("@g.us"):
             continue
         texto = m["texto"].strip()
         cmd = texto.upper()
