@@ -5,10 +5,11 @@
 ## Dados
 - @eng.aliff
 - Engenheiro Aliff Stefano — CREA-MS 68001 (deve aparecer na bio)
-- Modalidade: [PREENCHER — civil?]
+- Modalidade: **Engenheiro Civil** (bio: "Projetos MCMV & Construção Civil · Realizo o sonho da casa própria")
 - Serviços: **do projeto à construção e execução** — projetos, aprovação/documentação (alvará, ART, memorial descritivo), construção e execução de obra. [CONFIRMAR: MCMV? regularização? laudos?]
 - Diferencial a explorar: entrega completa — o cliente resolve tudo com um só profissional.
-- Região de atuação: [PREENCHER — provavelmente Itaquiraí, Eldorado, Caarapó e região/MS?]
+- Região de atuação: Eldorado, Itaquiraí, Naviraí, Caarapó, Mundo Novo, Iguatemi e cidades próximas (MS)
+- Dado real: único Reels (07/06/2026, MCMV "Sai do aluguel") teve 548 de alcance e 10 envios com 52 seguidores
 - Ticket médio / tipo de cliente ideal: [PREENCHER]
 - Canal de conversão: [WhatsApp / formulário]
 

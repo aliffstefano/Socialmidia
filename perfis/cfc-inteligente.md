@@ -1,13 +1,16 @@
-# Perfil: CFC Inteligente (novo — a criar)
+# Perfil: CFC Inteligente (novo — lançado em out/2026)
 
-> Perfil ainda não existe. Preencha o conceito para o Claude montar o lançamento.
+> Conceito confirmado pela bio e pelos 2 primeiros Reels do @cfcinteligente (30/10/2026).
 
 ## Conceito
-- O que é o CFC Inteligente? [PREENCHER — ex.: método/consultoria/software para donos de autoescola?
-  uma autoescola com processo digital? curso para alunos?]
-- Para quem é (B2B donos de CFC ou B2C alunos)? [PREENCHER]
-- Produto/oferta principal: [PREENCHER]
-- @ desejado (verificar disponibilidade): [PREENCHER]
+- **O que é:** sistema de gestão (SaaS) para autoescolas, "feito por quem vive o dia a dia de uma autoescola"
+  (o dono também é dono do CFC Nova Alvorada, que serve de caso real).
+- **Para quem:** B2B — donos, secretárias e instrutores de CFC (foco inicial: MS / Detran-MS).
+- **Funções divulgadas:** vendas, alunos, receitas e despesas em tempo real (PC e celular) · matrícula puxando
+  dados pelo RENACH ou leitura da CNH · integração com Servonline e Detran Web (aulas lançadas, LADV, guia
+  completa/parcial em um clique) · agenda com app do instrutor · módulo WhatsApp (cobrança e lembrete de aula).
+- **Oferta/CTA:** pedir demonstração (direct) · site www.cfcinteligente.com.br
+- **@:** @cfcinteligente · Preço/plano divulgável: [PREENCHER]
 
 ## Plano de lançamento padrão (ajustar após preencher)
 1. **Antes de abrir**: bio com promessa clara + CTA, 3 destaques (Comece aqui / Resultados / Fale comigo),
