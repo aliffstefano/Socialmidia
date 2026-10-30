@@ -32,14 +32,35 @@ fazer um **collab** entre as 3 contas.
 > ⚠️ Regras da CNH mudaram no fim de 2025 (CONTRAN). Toda ideia marcada **[CONFERIR REGRA]** só vai ao ar
 > depois de checar a norma vigente e o Detran-MS.
 
+## O que a pesquisa confirmou (30/10/2026)
+
+| Fato | Fonte | Confiança |
+|---|---|---|
+| **Res. CONTRAN 1.020, de 01/12/2025:** aulas em autoescola **deixaram de ser obrigatórias**. Exames teórico e prático continuam obrigatórios. | [gov.br (texto oficial)](https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes/Resolucao10202025.pdf/%40%40download/file) | Alta |
+| Curso teórico sem carga mínima (antes 45h); pode ser online, por plataformas do governo | gov.br / Detrans de outros estados | Média-alta |
+| Aula prática: **mínimo de 2h** | Res. 1.020, art. 38 | Média-alta |
+| Instrutor autônomo previsto, mas depende de cada Detran. **Não confirmado no MS.** | [Detran-PR](https://www.detran.pr.gov.br/Pagina/Informacoes-sobre-mudancas-no-processo-de-habilitacao-Resolucao-Contran-10202025) | Média |
+| Pontuação: 40 pts (nenhuma gravíssima em 12 meses) · 30 (uma) · 20 (duas ou mais) · EAR = 40. **Vale desde 2021, não é "novo".** | [Portal do Trânsito](https://www.portaldotransito.com.br/noticias/fiscalizacao-e-legislacao/nova-regra-da-cnh-limite-de-pontos-vale-desde-2021/) | Média |
+| Detran-MS alertou para golpe de falsa autoescola/site falso | [Portal do Trânsito](https://www.portaldotransito.com.br/noticias/fiscalizacao-e-legislacao/carteira-de-habilitacao-cnh/atencao-detran-ms-alerta-para-falsa-autoescola-e-site-para-aplicar-golpe-da-cnh/) | Média |
+| Taxas Detran-MS (Portaria "N" 201/2026), toxicológico na 1ª CNH no MS, CNH MS Social | — | **Não confirmado. Não publicar números.** |
+
+**Impacto na estratégia:**
+- Nunca dizer ou insinuar que a autoescola é obrigatória. O argumento honesto é: **2h é o mínimo legal, mas
+  passar na prova exige segurança**. A autoescola oferece carro de prova, instrutor, simulado do percurso,
+  ajuda com a burocracia e proteção contra golpe.
+- **Pauta nova (alto potencial de envio):** "Autoescola não é mais obrigatória. E agora?" (substitui a ideia #1).
+- **Pauta nova:** "Golpe da CNH sem prova: como reconhecer" (Pilar 1, envio).
+- Datas: 15/11 (Dia Mundial em Memória das Vítimas de Trânsito, 3º domingo de novembro), Black Friday 27/11
+  (só com condição real), férias de dezembro (direção em estrada e estrada rural). Confirmar antes de usar.
+
 ## Ideias de Reels
 
 ### Pilar 1 — Regra & Prova
 
 | # | Ideia | Gancho falado (0–2s) | Texto na tela | Formato | CTA |
 |---|---|---|---|---|---|
-| 1 ⭐ | O que mudou para tirar CNH em 2026 **[CONFERIR REGRA]** | "Vai tirar CNH em [cidade]? Mudou tudo, olha só." | MUDOU A CNH — o que vale em 2026 | Lista rápida (3 mudanças), instrutor falando p/ câmera | "Manda pra quem tá pensando em tirar" |
-| 2 ⭐ | Pontuação da CNH: 20, 30 ou 40 pontos? (versão 2 do Reels campeão) **[CONFERIR REGRA]** | "Quantos pontos você pode tomar antes de perder a CNH? Depende." | 20 · 30 · 40 PONTOS — qual é o seu? | Lista com números grandes | "Salva e manda pro motorista da família" |
+| 1 ⭐ | Autoescola não é mais obrigatória. E agora? (Res. 1.020/2025) | "Autoescola não é mais obrigatória. Mas tem um detalhe." | O QUE MUDOU NA CNH | Lista rápida (o que mudou × o que continua), instrutor falando p/ câmera | "Ficou com dúvida? Comenta que a gente responde" |
+| 2 ⭐ | Pontuação da CNH: 20, 30 ou 40 pontos? (versão 2 do Reels campeão — regra de 2021, não chamar de "nova") | "Quantos pontos você pode tomar antes de perder a CNH? Depende." | 20 · 30 · 40 PONTOS — qual é o seu? | Lista com números grandes | "Salva e manda pro motorista da família" |
 | 3 | 3 erros que mais reprovam na prova prática | "Esse erro reprova muita gente antes de sair do lugar." | ERROS QUE REPROVAM | Lista, cenas no carro parado | "Qual você cometeria? Comenta o número" |
 | 4 ⭐ | Baliza em 4 passos (vista de cima/de fora) | "Baliza não é dom. É conta." | BALIZA EM 4 PASSOS | Tutorial com cones, câmera fixa | "Salva pra treinar antes da prova" |
 | 5 | Placa que quase ninguém acerta | "Você sabe o que essa placa quer dizer?" | ACERTA ESSA? | Quiz (pausa de 2s antes da resposta) | "Comenta sua resposta antes de ver" |
