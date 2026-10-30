@@ -7,7 +7,7 @@ Nada para gravar. Monte no próprio Instagram ou no Canva.
 |---|---|---|
 | 1 | 👻 Hoje é dia das bruxas e do Saci! Qual foi o maior SUSTO da sua 1ª aula? | Caixinha de perguntas |
 | 2 | 🧙 Assustador mesmo é não saber essa placa… (foto da placa "Dê a preferência") | Quiz: Dê a preferência (correta) / Parada obrigatória / Proibido estacionar / Siga em frente |
-| 3 | O que mais te dá medo na prova prática? | Enquete: Baliza / Ladeira / Examinador / Tudo 😅 |
+| 3 | O que mais te dá medo na prova prática? | Enquete: Examinador / Ficar nervoso / Trânsito / Tudo 😅 |
 | 4 (opcional) | O Saci tem uma perna só e mesmo assim… a gente ensina você a usar as duas: embreagem e freio 😄 | Emoji slider 😂 |
 
 ## @eng.aliff

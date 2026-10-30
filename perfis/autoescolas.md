@@ -27,14 +27,14 @@
 4. **Motorista profissional**: mudança para C/D/E, quer renda (app, caminhão, ônibus).
 
 ## Dores mais fortes
-Medo de reprovar · nervosismo na baliza · custo total da CNH · burocracia do Detran ·
+Medo de reprovar · nervosismo na prova/no trânsito · custo total da CNH · burocracia do Detran ·
 instrutor impaciente · já reprovou e tem vergonha · mudanças nas regras da CNH.
 
 ## Tom de voz
 Acolhedor, didático, leve e bem-humorado. Nunca ridicularizar aluno que errou.
 
 ## Pilares sugeridos
-1. **Educa** — dicas de prova prática/teórica, baliza, sinalização, legislação.
+1. **Educa** — dicas de prova prática/teórica, sinalização, baliza (como habilidade da vida real, não item de prova), legislação.
 2. **Encoraja** — medo de dirigir, histórias de aprovação (com autorização), bastidores das aulas.
 3. **Vende** — como funciona o processo, custos, condições, diferenciais, CTA WhatsApp.
 
@@ -47,5 +47,6 @@ Acolhedor, didático, leve e bem-humorado. Nunca ridicularizar aluno que errou.
 
 ## Regras de prova confirmadas pelo dono (proprietário de CFC)
 - Deixar o carro morrer na prova prática: **1 vez não reprova; 2 vezes reprova.** (confirmado em 30/10/2026)
+- **Baliza não é mais exigida na prova prática desde jan/2026** (alteração de dez/2025). Nunca dizer "baliza que reprova na prova". (confirmado em 30/10/2026)
 - Dono prefere **não** fazer conteúdo destacando que "autoescola não é mais obrigatória" nos perfis das
   autoescolas (o tema pode ir para o @cfcinteligente, falando com donos de CFC).

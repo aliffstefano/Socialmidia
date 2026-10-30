@@ -6,6 +6,7 @@ Revisados em 30/10/2026. Base única; muda só o que está na tabela "Versão po
 
 ## ROTEIRO 1 — Baliza em 4 passos · 30s · Pilar Regra & Prova
 **Meta:** SALVAMENTO (hoje os posts têm 0 salvos).
+**Contexto (confirmado pelo dono):** a baliza **não é mais exigida na prova prática desde jan/2026**. O vídeo vende a baliza como habilidade da vida real, não como item de prova.
 
 **Gravação**
 - **Câmera A:** tripé do lado de fora, na altura do peito, plano aberto lateral (carro + 2 cones).
@@ -16,8 +17,8 @@ Revisados em 30/10/2026. Base única; muda só o que está na tabela "Versão po
 
 | Tempo | Cena | Fala | Texto na tela |
 |---|---|---|---|
-| 0–2s | Câm. A: carro entra devagar passando o cone da frente | "Baliza não é dom. É conta." | **BALIZA EM 4 PASSOS** |
-| 2–4s | Instrutor aponta a vaga de cones | "São só quatro passos. Fica até o fim e salva." | **SÓ 4 PASSOS · salva** |
+| 0–2s | Câm. A: carro entra devagar passando o cone da frente | "A baliza saiu da prova. Mas não saiu da sua vida." | **SAIU DA PROVA. NÃO DA VIDA.** |
+| 2–4s | Instrutor aponta a vaga de cones | "Na rua, no mercado, no centro… você vai precisar. São só quatro passos." | **BALIZA EM 4 PASSOS · salva** |
 | 4–6s | Carro para ao lado do cone da frente; corta p/ Câm. B (retrovisor) | "Passo um: emparelha, com uma distância de um braço." | **1. EMPARELHA** |
 | 6–8s | Retrovisores alinhados | "Retrovisor com retrovisor." | **Retrovisor com retrovisor** |
 | 8–10s | Ré reta, devagar | "Passo dois: ré reta, devagarinho, sem mexer no volante." | **2. RÉ RETA** |
@@ -28,11 +29,11 @@ Revisados em 30/10/2026. Base única; muda só o que está na tabela "Versão po
 | 21–23s | Mãos girando pro outro lado | "Passo quatro: volante todo pro outro lado." | **4. VOLANTE PRO OUTRO LADO** |
 | 23–26s | Carro endireita na vaga | "Ré devagar até endireitar." | **Ré até endireitar** |
 | 26–28s | Ajuste pra frente, volante reto | "Ajusta pra frente, e pronto." | **Ajusta e pronto** |
-| 28–30s | Lista dos 4 passos sobre o último frame | "Salva esse vídeo e treina antes da prova." | **1 EMPARELHA · 2 RÉ RETA · 3 VOLANTE PRA CALÇADA · 4 OUTRO LADO** |
+| 28–30s | Lista dos 4 passos sobre o último frame | "Salva pra quando precisar estacionar." | **1 EMPARELHA · 2 RÉ RETA · 3 VOLANTE PRA CALÇADA · 4 OUTRO LADO** |
 
 **Legenda base**
-> Baliza não é dom. É conta. 🚗
-> Os 4 passos em 30 segundos pra você salvar e treinar antes da prova em [CIDADE].
+> A baliza saiu da prova. Mas não saiu da sua vida. 🚗
+> Os 4 passos em 30 segundos pra você salvar e usar quando precisar estacionar em [CIDADE].
 > A referência exata muda de carro pra carro, então treine com seu instrutor.
 > Salva e manda pra quem tem medo de baliza.
 > Quer aprender com a gente? Chama no WhatsApp (link na bio).
@@ -43,8 +44,8 @@ Revisados em 30/10/2026. Base única; muda só o que está na tabela "Versão po
 
 | | Eldorado | Itaquiraí | Caarapó |
 |---|---|---|---|
-| Gancho | "...Aqui em Eldorado a gente treina assim." | "...Aqui em Itaquiraí a gente treina assim." | "...Aqui em Caarapó a gente treina assim." |
-| Texto 0–2s | BALIZA EM 4 PASSOS · ELDORADO | · ITAQUIRAÍ | · CAARAPÓ |
+| Gancho (2–4s) | "No centro de Eldorado você vai precisar." | "No centro de Itaquiraí você vai precisar." | "No centro de Caarapó você vai precisar." |
+| Texto 2–4s | BALIZA EM 4 PASSOS · ELDORADO | · ITAQUIRAÍ | · CAARAPÓ |
 | Fundo | [PREENCHER ponto conhecido / fachada] | [PREENCHER] | [PREENCHER] |
 | Hashtag | #eldoradoms | #itaquiraims | #caarapoms |
 

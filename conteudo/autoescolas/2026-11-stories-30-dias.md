@@ -21,7 +21,7 @@
 | Ter | 03/11 | Bastidor | "Bastidor da semana: o carro pronto pra aula 🚗" | — | Emoji slider 😬: "Quão ansioso você está pra sua primeira aula?" | 📸 precisa foto do dia (carro, instrutor ou pista) |
 | Qua | 04/11 | Mito ou verdade | "Mito ou verdade? 🤔" | — | ENQUETE: "Precisa ter carro próprio pra tirar a CNH?" · Mito / Verdade (resposta: Mito, no Qui) | Nada |
 | Qui | 05/11 | Resposta + caixinha | S1: "Mito ✅ Você aprende e faz a prova no carro da autoescola. Não precisa ter carro." | S2: "Qual sua dúvida sobre a CNH? 👇" | S1: repost da enquete de ontem (mostra resultado) · S2: CAIXINHA "Qual sua dúvida sobre a CNH?" | Nada |
-| Sex | 06/11 | Medo + WhatsApp | S1: "Quanto medo você tem da baliza? 😨" · S2: "Quer começar? Chama no WhatsApp 👇" | — | S1: SLIDER 😨 "Quanto medo você tem da baliza?" (0 a 10) · S2: LINK para [LINK WHATSAPP DA UNIDADE] | Link do WhatsApp |
+| Sex | 06/11 | Medo + WhatsApp | S1: "Quanto medo você tem de dirigir no trânsito? 😨" · S2: "Quer começar? Chama no WhatsApp 👇" | — | S1: SLIDER 😨 "Quanto medo você tem de dirigir no trânsito?" (0 a 10) · S2: LINK para [LINK WHATSAPP DA UNIDADE] | Link do WhatsApp |
 | Sáb | 07/11 | Dia de Reels | "Assistiu o Reels dessa semana? Compartilhe aqui 👇" | — | Compartilhe o Reels da semana + ENQUETE "Você já sabia disso?" · Sim / Não | Reels publicado nesta semana [PREENCHER tema] |
 | Dom | 08/11 | Leve/local | "Qual o melhor lugar de [CIDADE] pra dirigir? 🚗" | — | ENQUETE: Centro · Bairro · Estrada · Ainda não dirijo | Nada |
 
@@ -30,21 +30,21 @@
 | Dia | Data | Tema | Story 1 (texto na tela) | Story 2 (se houver) | Sticker (tipo + pergunta + opções) | Precisa de |
 |---|---|---|---|---|---|---|
 | Seg | 09/11 | Quiz de placa | "Quiz de placa 🚦 Qual é essa?" | — | QUIZ: "Qual placa é essa?" A) Parada obrigatória · B) Dê a preferência (correta) · C) Sentido único · D) Proibido virar à direita | Imagem da placa R-2 |
-| Ter | 10/11 | Bastidor | "Bastidor: a baliza parece difícil, mas é treino 🅿️" | — | ENQUETE: "Você acha a baliza difícil?" · Sim / Não | 📸 precisa foto do dia (vaga e cones, sem aluno sem autorização) |
+| Ter | 10/11 | Bastidor | "Sabia? A baliza saiu da prova prática. Mas na rua você vai precisar — e a gente ensina 🅿️" | — | ENQUETE: "Você sabia que a baliza saiu da prova?" · Sabia / Não sabia | 📸 precisa foto do dia (vaga e cones, sem aluno sem autorização) |
 | Qua | 11/11 | Mito ou verdade | "Mito ou verdade? ⏱️" | — | ENQUETE: "A aula prática mínima é de 2 horas?" · Mito / Verdade (resposta: Verdade, no Qui) | Nada |
 | Qui | 12/11 | Resposta + caixinha + dúvidas | S1: "Verdade ✅ A aula prática mínima é de 2 horas." · S2: "Qual sua dúvida sobre a CNH? 👇" · S3: "Respondendo 2 dúvidas: Quantos pontos posso ter? 40 sem gravíssima em 12 meses · 30 com uma · 20 com duas ou mais. Preciso fazer autoescola? Não é mais obrigatória, mas os exames continuam." | — | S1: repost da enquete · S2: CAIXINHA "Qual sua dúvida sobre a CNH?" · S3: sem sticker novo (texto); acrescente CAIXINHA ou ENQUETE se preferir | Nada. S3: [CONFERIR] os pontos com o Detran-MS antes de postar |
 | Sex | 13/11 | Medo + WhatsApp | S1: "Medo de dirigir? Você não está sozinho 💛" · S2: "Quer começar? Chama no WhatsApp 👇" | — | S1: ENQUETE "Você tem medo de dirigir na estrada?" · Sim / Não · S2: LINK para [LINK WHATSAPP DA UNIDADE] | Link do WhatsApp |
 | Sáb | 14/11 | Dia de Reels | "Assistiu o Reels dessa semana? Compartilhe aqui 👇" | — | Compartilhe o Reels da semana + ENQUETE "Você já sabia disso?" · Sim / Não | Reels publicado nesta semana [PREENCHER tema] |
 | Dom | 15/11 | Dia Mundial em Memória das Vítimas de Trânsito | "Hoje é o Dia Mundial em Memória das Vítimas de Trânsito. Dirigir com atenção salva vidas. 🕯️" | — | CAIXINHA: "Qual cuidado você nunca esquece ao volante?" (sem humor, sem promoção neste dia) | Nada |
 
-## Semana 3 (16 a 22/11): Vencendo a baliza
+## Semana 3 (16 a 22/11): Vencendo o medo
 
 | Dia | Data | Tema | Story 1 (texto na tela) | Story 2 (se houver) | Sticker (tipo + pergunta + opções) | Precisa de |
 |---|---|---|---|---|---|---|
 | Seg | 16/11 | Quiz de placa | "Quiz de placa 🚦 Você sabe essa?" | — | QUIZ: "Qual placa é essa?" A) Proibido parar e estacionar · B) Proibido estacionar (correta) · C) Dê a preferência · D) Velocidade máxima | Imagem da placa R-6a |
 | Ter | 17/11 | Bastidor | "Bastidor: revisão de placas antes da aula teórica 📚" | — | Emoji slider 🚦: "Quanto você já sabe de placas?" | 📸 precisa foto do dia (sala ou material de estudo, sem aluno sem autorização) |
 | Qua | 18/11 | Mito ou verdade | "Mito ou verdade? 🤔" | — | ENQUETE: "Deixar o carro morrer na prova reprova na hora?" · Mito / Verdade (resposta: Mito, no Qui) | Nada |
-| Qui | 19/11 | Resposta + caixinha + dúvidas | S1: "Mito ✅ Deixar o carro morrer UMA vez não reprova. Mas se morrer DUAS vezes, aí reprova. Calma e embreagem no ponto! 😉" · S2: "Qual sua dúvida sobre a CNH? 👇" · S3: "Respondendo 2 dúvidas: Medo de baliza tem reforço? Tem sim, no seu ritmo. [PREENCHER como funciona na unidade]. Quanto tempo leva a CNH? [PREENCHER prazo real]." | — | S1: repost da enquete · S2: CAIXINHA "Qual sua dúvida sobre a CNH?" · S3: sem sticker novo (texto) | Nada. Trocar as dúvidas pelas reais da caixinha de 12/11 |
+| Qui | 19/11 | Resposta + caixinha + dúvidas | S1: "Mito ✅ Deixar o carro morrer UMA vez não reprova. Mas se morrer DUAS vezes, aí reprova. Calma e embreagem no ponto! 😉" · S2: "Qual sua dúvida sobre a CNH? 👇" · S3: "Respondendo 2 dúvidas: Medo de dirigir tem reforço? Tem sim, no seu ritmo. [PREENCHER como funciona na unidade]. Quanto tempo leva a CNH? [PREENCHER prazo real]." | — | S1: repost da enquete · S2: CAIXINHA "Qual sua dúvida sobre a CNH?" · S3: sem sticker novo (texto) | Nada. Trocar as dúvidas pelas reais da caixinha de 12/11 |
 | Sex | 20/11 | Feriado + medo | S1: "Feriado de Consciência Negra 🖤 Dia de refletir sobre história e cultura afro-brasileira." · S2: "Quanto medo você tem de reprovar na prova prática?" | — | S1: ENQUETE "Qual o seu plano pro feriado?" · Descanso / Família / Viagem / Estudar · S2: SLIDER 😰 "Quanto medo de reprovar?" (0 a 10) | Nada |
 | Sáb | 21/11 | Dia de Reels + WhatsApp | S1: "Assistiu o Reels dessa semana? Compartilhe aqui 👇" · S2: "Quer começar? Chama no WhatsApp 👇" | — | S1: Compartilhe o Reels da semana + ENQUETE "Você já sabia disso?" · Sim / Não · S2: LINK para [LINK WHATSAPP DA UNIDADE] | Reels publicado nesta semana [PREENCHER tema] · Link do WhatsApp |
 | Dom | 22/11 | Leve | "Qual carro você sonha em dirigir? 🚗" | — | ENQUETE: Carro · Moto · Caminhão · Ônibus | Nada |
