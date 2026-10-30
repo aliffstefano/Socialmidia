@@ -48,7 +48,7 @@ fazer um **collab** entre as 3 contas.
 - Nunca dizer ou insinuar que a autoescola é obrigatória. O argumento honesto é: **2h é o mínimo legal, mas
   passar na prova exige segurança**. A autoescola oferece carro de prova, instrutor, simulado do percurso,
   ajuda com a burocracia e proteção contra golpe.
-- **Pauta nova (alto potencial de envio):** "Autoescola não é mais obrigatória. E agora?" (substitui a ideia #1).
+- **Decisão do dono:** não fazer conteúdo sobre "autoescola não é obrigatória" nos perfis das autoescolas (o tema fica no @cfcinteligente). A ideia #1 virou "Golpe da CNH sem prova".
 - **Pauta nova:** "Golpe da CNH sem prova: como reconhecer" (Pilar 1, envio).
 - Datas: 15/11 (Dia Mundial em Memória das Vítimas de Trânsito, 3º domingo de novembro), Black Friday 27/11
   (só com condição real), férias de dezembro (direção em estrada e estrada rural). Confirmar antes de usar.
@@ -59,7 +59,7 @@ fazer um **collab** entre as 3 contas.
 
 | # | Ideia | Gancho falado (0–2s) | Texto na tela | Formato | CTA |
 |---|---|---|---|---|---|
-| 1 ⭐ | Autoescola não é mais obrigatória. E agora? (Res. 1.020/2025) | "Autoescola não é mais obrigatória. Mas tem um detalhe." | O QUE MUDOU NA CNH | Lista rápida (o que mudou × o que continua), instrutor falando p/ câmera | "Ficou com dúvida? Comenta que a gente responde" |
+| 1 ⭐ | Golpe da CNH sem prova: como reconhecer (Detran-MS alertou) | "Prometeram sua CNH sem prova? Cuidado." | GOLPE DA CNH | Lista de 3 sinais, instrutor p/ câmera | "Manda pra quem tá pensando em tirar a CNH" |
 | 2 ⭐ | Pontuação da CNH: 20, 30 ou 40 pontos? (versão 2 do Reels campeão — regra de 2021, não chamar de "nova") | "Quantos pontos você pode tomar antes de perder a CNH? Depende." | 20 · 30 · 40 PONTOS — qual é o seu? | Lista com números grandes | "Salva e manda pro motorista da família" |
 | 3 | 3 erros que mais reprovam na prova prática | "Esse erro reprova muita gente antes de sair do lugar." | ERROS QUE REPROVAM | Lista, cenas no carro parado | "Qual você cometeria? Comenta o número" |
 | 4 ⭐ | Baliza em 4 passos — saiu da prova (desde jan/2026), mas não da vida | "A baliza saiu da prova. Mas não saiu da sua vida." | BALIZA NA VIDA REAL | Tutorial com cones, câmera fixa | "Salva pra quando precisar estacionar" |
@@ -105,7 +105,7 @@ fazer um **collab** entre as 3 contas.
 | Ordem | # | Por quê |
 |---|---|---|
 | 1 | **2 — Pontuação (parte 2)** | Repete o tema que mais deu resultado (1.309 de alcance e 12 envios). |
-| 2 | **1 — O que mudou na CNH em 2026** | Mesmo tipo de pauta (regra nova); assunto quente para quem vai começar. |
+| 2 | **1 — Golpe da CNH sem prova** | Alerta útil, alto potencial de envio; serve de collab entre as 3 contas. |
 | 3 | **21 — Passo a passo em [cidade]** | Converte: é o conteúdo que leva para o WhatsApp, e cada cidade ganha sua versão. |
 | 4 | **4 — Baliza em 4 passos** | Gera salvamentos (hoje são 0) + novidade (saiu da prova); fácil de gravar com cones. |
 | 5 | **11 — POV 1ª aula** | Conexão; gravado em cada cidade, sem fala, edição simples. |
