@@ -10,6 +10,7 @@ import json, os, sys, time
 from datetime import datetime, timedelta, timezone
 sys.path.insert(0, os.path.dirname(__file__))
 from avisar_whatsapp import enviar
+import ler_aprovacoes
 
 RAIZ = os.path.join(os.path.dirname(__file__), "..")
 DIAS = ["segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo"]
@@ -21,6 +22,10 @@ def main():
     if not os.path.exists(caminho):
         print(f"Sem agenda para {hoje}.")
         return
+    try:
+        ler_aprovacoes.main()  # aplica APROVO/AJUSTE recebidos pelo WhatsApp antes de decidir
+    except Exception as e:
+        print("não consegui ler aprovações:", e)
     agenda = json.load(open(caminho, encoding="utf-8"))
     dia = DIAS[datetime.strptime(hoje, "%Y-%m-%d").weekday()]
     if not agenda.get("_aprovado"):
