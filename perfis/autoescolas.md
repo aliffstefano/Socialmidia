@@ -44,3 +44,8 @@ Acolhedor, didático, leve e bem-humorado. Nunca ridicularizar aluno que errou.
 - Quiz de placas nos Stories
 - Comemoração de aprovado (foto com autorização + CNH sem dados visíveis)
 - Carrossel "Quanto custa tirar a CNH em [cidade]" / "Passo a passo da CNH"
+
+## Regras de prova confirmadas pelo dono (proprietário de CFC)
+- Deixar o carro morrer na prova prática: **1 vez não reprova; 2 vezes reprova.** (confirmado em 30/10/2026)
+- Dono prefere **não** fazer conteúdo destacando que "autoescola não é mais obrigatória" nos perfis das
+  autoescolas (o tema pode ir para o @cfcinteligente, falando com donos de CFC).
