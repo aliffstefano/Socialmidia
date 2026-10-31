@@ -79,8 +79,10 @@ def main():
     stories, posts = [], []
     for conta, ig in CONTAS.items():
         for s in get(f"{ig}/stories", fields="id,media_type,timestamp,permalink").get("data", []):
-            m = metricas(s["id"], ["reach", "views", "replies", "shares", "total_interactions", "navigation"],
-                         breakdown="story_navigation_action_type")
+            m = metricas(s["id"], ["reach", "views", "replies", "shares", "total_interactions"])
+            # navigation exige breakdown próprio; misturar com as outras métricas faz a API recusar tudo
+            m.update({k.upper(): v for k, v in metricas(s["id"], ["navigation"],
+                                                         breakdown="story_navigation_action_type").items()})
             postado, dia, hora = quando(s["timestamp"])
             stories.append({"id": s["id"], "conta": conta, "postado_ms": postado, "dia_semana": dia, "hora": hora,
                             "tipo": s.get("media_type"), "alcance": m.get("reach"), "views": m.get("views"),
