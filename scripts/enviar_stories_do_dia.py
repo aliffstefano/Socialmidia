@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from avisar_whatsapp import enviar
 import ler_aprovacoes
 from expediente import ajustar
+import postar_robo
 
 RAIZ = os.path.join(os.path.dirname(__file__), "..")
 DIAS = ["segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo"]
@@ -37,6 +38,9 @@ def main():
     automaticos = []
     for perfil, cfg in agenda.items():
         if perfil.startswith("_"):
+            continue
+        if postar_robo.robo_cuida(perfil, cfg):  # o robô do Android posta no horário (postar_robo.py)
+            automaticos += [f"{cfg.get('nome', perfil)} às {s['hora']}" for s in cfg["stories"]]
             continue
         cfg = ajustar(hoje, perfil, cfg)
         if cfg.get("auto"):  # publicado pelo robô (scripts/publicar_story.py), ninguém precisa postar

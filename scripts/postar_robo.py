@@ -1,0 +1,145 @@
+"""Robô de Stories: publica no horário, com sticker, pelo serviço do Android (STORY_API_URL).
+
+Roda várias vezes por dia (rotina). A cada execução, publica os stories de hoje (agenda aprovada)
+cujo horário já chegou e que ainda não saíram. Sticker de cada arte: conteudo/agenda/_stickers_robo.json.
+Estado (não duplicar): conteudo/agenda/_publicados.json.
+Se falhar: manda a arte e a instrução para quem posta à mão (regras de expediente) e avisa o Aliff.
+Uso: python3 scripts/postar_robo.py [--agora HH:MM] [--data AAAA-MM-DD]
+"""
+import json, os, re, sys, time, urllib.error, urllib.request
+from datetime import datetime, timedelta, timezone
+sys.path.insert(0, os.path.dirname(__file__))
+from avisar_whatsapp import enviar
+from coletar_insights import CONTAS, get
+from expediente import ajustar
+
+RAIZ = os.path.join(os.path.dirname(__file__), "..")
+AG = os.path.join(RAIZ, "conteudo", "agenda")
+RAW = "https://raw.githubusercontent.com/aliffstefano/Socialmidia/claude/compassionate-heisenberg-7z04ko/"
+MS = timezone(timedelta(hours=-4))
+ATRASO_MAX = 4 * 60  # min: depois disso não publica mais (story fora de hora)
+CFG = json.load(open(os.path.join(os.path.dirname(__file__), "contas_robo.json"), encoding="utf-8"))
+UA = {"User-Agent": "socialmidia-agente/1.0"}
+
+
+def _m(h):
+    return int(h[:2]) * 60 + int(h[3:5])
+
+
+def ler(nome, padrao):
+    p = os.path.join(AG, nome)
+    return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else padrao
+
+
+def stickers_de(perfil, arte):
+    nome = re.sub(r"^autoescola-[a-z]+-", "", os.path.basename(arte))
+    specs = ler("_stickers_robo.json", {}).get(nome)
+    if specs is None:
+        return None
+    out = []
+    for s in specs:
+        s = dict(s)
+        if s.get("url") == "WHATSAPP":
+            s["url"] = CFG[perfil]["whatsapp"]
+            if not s["url"]:
+                return None
+        out.append(s)
+    return out
+
+
+def robo_cuida(perfil, cfg):
+    """True se o robô consegue postar todos os stories deste bloco (tem token e sticker definido)."""
+    return (perfil in CFG and bool(os.environ.get(CFG[perfil]["token_env"])) and bool(os.environ.get("STORY_API_URL"))
+            and all(stickers_de(perfil, s["arte"]) is not None for s in cfg["stories"]))
+
+
+def chamar(caminho, corpo=None, token=None, timeout=300):
+    h = dict(UA, **({"Authorization": "Bearer " + token} if token else {}))
+    if corpo is not None:
+        h["Content-Type"] = "application/json"
+    req = urllib.request.Request(os.environ["STORY_API_URL"] + caminho, method="POST" if corpo is not None else "GET",
+                                 data=json.dumps(corpo).encode() if corpo is not None else None, headers=h)
+    try:
+        return json.load(urllib.request.urlopen(req, timeout=timeout))
+    except urllib.error.HTTPError as e:
+        try:
+            return json.load(e)
+        except Exception:
+            return {"ok": False, "error": f"HTTP {e.code}"}
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
+
+
+def no_ar(ig):
+    return len(get(f"{CONTAS[ig]}/stories", fields="timestamp").get("data", []))
+
+
+def publicar(perfil, arte, stickers):
+    ig, token = CFG[perfil]["ig"], os.environ.get(CFG[perfil]["token_env"])
+    if not token:
+        return False, "sem token"
+    for _ in range(30):  # um celular só: espera ficar livre
+        if not chamar("/health").get("busy"):
+            break
+        time.sleep(10)
+    antes = no_ar(ig)
+    r = chamar("/story", {"image_url": RAW + arte, "stickers": stickers}, token)
+    if not r.get("ok"):
+        return False, r.get("error") or "erro desconhecido"
+    for _ in range(9):  # confirma na API da Meta
+        time.sleep(15)
+        if no_ar(ig) > antes:
+            return True, ""
+    return False, "o serviço disse ok, mas o story não apareceu na conta"
+
+
+def plano_b(data, perfil, cfg, s, motivo):
+    destino = ajustar(data, perfil, cfg)["para"]
+    leg = f"⚠️ *O robô não conseguiu postar.* Poste agora, por favor.\nSticker: *{s['sticker']}*"
+    if s.get("opcoes"):
+        leg += f"\n{s['opcoes']}"
+    enviar(leg, destino, os.path.join(RAIZ, s["arte"]))
+    if destino != "DYALOG_NUMERO":
+        enviar(f"⚠️ Robô falhou: {cfg.get('nome', perfil)} {s['hora']} ({motivo}). Mandei a arte para a equipe postar.", "DYALOG_NUMERO")
+
+
+def main():
+    args = dict(zip(sys.argv[1::2], sys.argv[2::2]))
+    agora = datetime.now(MS)
+    data = args.get("--data", agora.strftime("%Y-%m-%d"))
+    minuto = _m(args.get("--agora", agora.strftime("%H:%M")))
+    agenda = ler(f"{data}.json", None)
+    if not agenda or not agenda.get("_aprovado"):
+        print("sem agenda aprovada para", data)
+        return
+    feitos = ler("_publicados.json", {})
+    fila = []
+    for perfil, cfg in agenda.items():
+        if perfil.startswith("_") or perfil not in CFG:
+            continue
+        for s in cfg["stories"]:
+            chave = f"{data}|{perfil}|{s['arte']}"
+            if chave in feitos or _m(s["hora"]) > minuto + 5:
+                continue
+            fila.append((s["hora"], perfil, cfg, s, chave))
+    for hora, perfil, cfg, s, chave in sorted(fila, key=lambda x: x[0]):
+        quando = datetime.now(MS).strftime("%Y-%m-%d %H:%M")
+        if minuto - _m(hora) > ATRASO_MAX:
+            feitos[chave] = {"status": "perdido", "quando": quando}
+            enviar(f"⏭️ Robô não postou {cfg.get('nome', perfil)} das {hora}: passou do horário.", "DYALOG_NUMERO")
+            continue
+        stickers = stickers_de(perfil, s["arte"])
+        if stickers is None:
+            ok, motivo = False, "sticker desta arte não está em _stickers_robo.json"
+        else:
+            ok, motivo = publicar(perfil, s["arte"], stickers)
+        feitos[chave] = {"status": "publicado" if ok else "falhou", "quando": quando, **({"motivo": motivo} if motivo else {})}
+        print(chave, feitos[chave])
+        if not ok:
+            plano_b(data, perfil, cfg, s, motivo)
+        json.dump(feitos, open(os.path.join(AG, "_publicados.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump(feitos, open(os.path.join(AG, "_publicados.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+
+if __name__ == "__main__":
+    main()
