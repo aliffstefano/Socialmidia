@@ -94,20 +94,50 @@ def no_ar(ig):
     return len(get(f"{CONTAS[ig]}/stories", fields="timestamp").get("data", []))
 
 
+def esperar_livre():
+    for _ in range(30):  # um celular só: espera ficar livre
+        if not chamar("/health").get("busy"):
+            return
+        time.sleep(10)
+
+
+def conferir(arte, stickers, token):
+    """Monta em dry_run, lê onde cada sticker ficou (boxes) e ajusta o y até caber no espaço vazio.
+    Devolve (stickers, erro). Não publica nada."""
+    a, b = faixa(os.path.join(RAIZ, arte))
+    for tentativa in range(2):
+        esperar_livre()
+        r = chamar("/story", {"image_url": RAW + arte, "stickers": stickers, "dry_run": True}, token)
+        if not r.get("ok"):
+            return None, r.get("error") or "dry_run falhou"
+        caixas = r.get("boxes") or []
+        if len(caixas) != len(stickers):
+            return stickers, ""  # serviço sem boxes: segue com a posição calculada
+        if all(c["top"] >= a - 0.01 and c["bottom"] <= b + 0.01 for c in caixas):
+            return stickers, ""
+        alturas = [c["bottom"] - c["top"] for c in caixas]
+        if sum(alturas) > (b - a) + 0.01:
+            return None, f"o sticker ocupa {sum(alturas):.0%} da tela e o espaço vazio da arte tem {b - a:.0%}"
+        topo = (a + b) / 2 - sum(alturas) / 2
+        for st, alt in zip(stickers, alturas):
+            st["y"] = round(topo + alt / 2, 3)
+            topo += alt
+    return None, "não consegui posicionar o sticker sem tampar a arte"
+
+
 def publicar(perfil, arte, stickers):
     ig, token = CFG[perfil]["ig"], os.environ.get(CFG[perfil]["token_env"])
     if not token:
         return False, "sem token"
-    for _ in range(30):  # um celular só: espera ficar livre
-        if not chamar("/health").get("busy"):
-            break
-        time.sleep(10)
+    # Enquete vai sem pergunta: ela já está escrita na arte.
+    stickers = [{k: v for k, v in st.items() if not (st["type"] == "poll" and k == "question")} for st in stickers]
+    if stickers:
+        stickers, erro = conferir(arte, stickers, token)
+        if stickers is None:
+            return False, erro
+    esperar_livre()
     antes = no_ar(ig)
-    # Enquete vai sem pergunta (ela já está na arte). Se o serviço ainda exigir, manda com a pergunta.
-    sem_pergunta = [{k: v for k, v in st.items() if not (st["type"] == "poll" and k == "question")} for st in stickers]
-    r = chamar("/story", {"image_url": RAW + arte, "stickers": sem_pergunta}, token)
-    if not r.get("ok") and "question" in str(r.get("error", "")) and sem_pergunta != stickers:
-        r = chamar("/story", {"image_url": RAW + arte, "stickers": stickers}, token)
+    r = chamar("/story", {"image_url": RAW + arte, "stickers": stickers}, token)
     if not r.get("ok"):
         return False, r.get("error") or "erro desconhecido"
     for _ in range(9):  # confirma na API da Meta
@@ -155,9 +185,11 @@ def main():
         stickers = stickers_de(perfil, s["arte"])
         if stickers is None:
             ok, motivo = False, "sticker desta arte não está em _stickers_robo.json"
-        elif stickers and posicionar(s["arte"], stickers) is None:
-            ok, motivo = False, "não há espaço vazio na arte para o sticker sem tampar o texto"
         else:
+            if stickers and posicionar(s["arte"], stickers) is None:  # estimativa não coube: centraliza e deixa o dry_run decidir
+                a, b = faixa(os.path.join(RAIZ, s["arte"]))
+                for st in stickers:
+                    st["y"] = round((a + b) / 2, 3)
             ok, motivo = publicar(perfil, s["arte"], stickers)
         feitos[chave] = {"status": "publicado" if ok else "falhou", "quando": quando, **({"motivo": motivo} if motivo else {})}
         print(chave, feitos[chave])
