@@ -48,22 +48,25 @@ def stickers_de(perfil, arte):
     return out
 
 
-# Altura aproximada de cada sticker (fração da tela). Slider medido no 1º post (03/11); os outros são estimativa.
-ALTURA = {"slider": 0.24, "question": 0.24, "link": 0.08, "mention": 0.06, "hashtag": 0.06, "poll": 0.20}
+# Altura real de cada sticker (fração da tela), medida pelo "boxes" do dry_run em 03/11/2026. Enquete sem pergunta.
+ALTURA = {"slider": 0.244, "question": 0.272, "link": 0.056, "mention": 0.06, "hashtag": 0.06}
+ALTURA_POLL = {2: 0.212, 3: 0.30, 4: 0.387}
+
+
+def altura(st):
+    return ALTURA_POLL.get(len(st.get("options", [])), 0.387) if st["type"] == "poll" else ALTURA.get(st["type"], 0.3)
 
 
 def posicionar(arte, stickers):
     """Põe o sticker no centro da maior faixa vazia da arte. Devolve None se não couber (não publica)."""
     a, b = faixa(os.path.join(RAIZ, arte))
-    precisa = sum(ALTURA.get(s["type"], 0.2) + (0.04 * max(0, len(s.get("options", [])) - 2) if s["type"] == "poll" else 0)
-                  for s in stickers)
+    precisa = sum(altura(s) for s in stickers)
     if precisa > (b - a) + 0.01:
         return None
     topo = (a + b) / 2 - precisa / 2
     for s in stickers:
-        alt = ALTURA.get(s["type"], 0.2) + (0.04 * max(0, len(s.get("options", [])) - 2) if s["type"] == "poll" else 0)
-        s["y"] = round(topo + alt / 2, 3)
-        topo += alt
+        s["y"] = round(topo + altura(s) / 2, 3)
+        topo += altura(s)
     return stickers
 
 
@@ -86,8 +89,8 @@ def chamar(caminho, corpo=None, token=None, timeout=300):
             return json.load(e)
         except Exception:
             return {"ok": False, "error": f"HTTP {e.code}"}
-    except Exception as e:
-        return {"ok": False, "error": str(e)}
+    except Exception as e:  # conexão caiu (o pedido pode ter sido processado mesmo assim)
+        return {"ok": False, "error": str(e), "conexao": True}
 
 
 def no_ar(ig):
@@ -108,6 +111,9 @@ def conferir(arte, stickers, token):
     for tentativa in range(2):
         esperar_livre()
         r = chamar("/story", {"image_url": RAW + arte, "stickers": stickers, "dry_run": True}, token)
+        if r.get("conexao"):  # dry_run não publica: pode repetir
+            esperar_livre()
+            r = chamar("/story", {"image_url": RAW + arte, "stickers": stickers, "dry_run": True}, token)
         if not r.get("ok"):
             return None, r.get("error") or "dry_run falhou"
         caixas = r.get("boxes") or []
@@ -138,7 +144,9 @@ def publicar(perfil, arte, stickers):
     esperar_livre()
     antes = no_ar(ig)
     r = chamar("/story", {"image_url": RAW + arte, "stickers": stickers}, token)
-    if not r.get("ok"):
+    if r.get("conexao"):  # nunca reenvia (risco de duplicar): espera o celular e confere na Meta
+        esperar_livre()
+    elif not r.get("ok"):
         return False, r.get("error") or "erro desconhecido"
     for _ in range(9):  # confirma na API da Meta
         time.sleep(15)
@@ -186,11 +194,10 @@ def main():
         if stickers is None:
             ok, motivo = False, "sticker desta arte não está em _stickers_robo.json"
         else:
-            if stickers and posicionar(s["arte"], stickers) is None:  # estimativa não coube: centraliza e deixa o dry_run decidir
-                a, b = faixa(os.path.join(RAIZ, s["arte"]))
-                for st in stickers:
-                    st["y"] = round((a + b) / 2, 3)
-            ok, motivo = publicar(perfil, s["arte"], stickers)
+            if stickers and posicionar(s["arte"], stickers) is None:
+                ok, motivo = False, "o sticker não cabe no espaço vazio da arte sem tampar o texto"
+            else:
+                ok, motivo = publicar(perfil, s["arte"], stickers)
         feitos[chave] = {"status": "publicado" if ok else "falhou", "quando": quando, **({"motivo": motivo} if motivo else {})}
         print(chave, feitos[chave])
         if not ok:

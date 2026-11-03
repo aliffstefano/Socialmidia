@@ -1,19 +1,126 @@
 {
- "_leia": "Sticker que o robô coloca em cada arte (chave = nome do arquivo sem a pasta e sem 'autoescola-<cidade>-'). [] = arte sem sticker. 'WHATSAPP' = link da conta em scripts/contas_robo.json. y = centro do sticker (0 topo, 1 rodapé). Emojis do slider: só os 40 de scripts/contas_robo.json. Quiz não existe: usar poll.",
- "bastidor_SLIDER.png":        [{"type": "slider", "question": "Quão ansioso você está pra sua 1ª aula?", "emoji": "😱", "y": 0.65}],
- "mito_ENQUETE.png":           [{"type": "poll", "question": "Precisa ter carro próprio?", "options": ["Mito", "Verdade"], "y": 0.64}],
- "1-resposta.png":             [],
- "2-duvida_CAIXINHA.png":      [{"type": "question", "question": "Qual sua dúvida sobre a CNH?", "y": 0.66}],
- "1-medo_SLIDER.png":          [{"type": "slider", "question": "Quanto medo você tem do trânsito?", "emoji": "😱", "y": 0.65}],
- "2-whatsapp_LINK.png":        [{"type": "link", "url": "WHATSAPP", "text": "Chamar no WhatsApp", "y": 0.66}],
- "placa_QUIZ.png":             [{"type": "poll", "question": "O que essa placa quer dizer?", "options": ["Velocidade máxima", "Velocidade mínima"], "y": 0.71}],
- "cidade_ENQUETE.png":         [{"type": "poll", "question": "Melhor lugar pra dirigir?", "options": ["Centro", "Bairro", "Estrada", "Ainda não dirijo"], "y": 0.62}],
- "eng-1-aluguel_ENQUETE.png":  [{"type": "poll", "question": "Você paga aluguel hoje?", "options": ["Sim", "Não"], "y": 0.64}],
- "eng-2-chama_LINK.png":       [{"type": "link", "url": "WHATSAPP", "text": "Quero sair do aluguel", "y": 0.66}],
- "eng-1-art_ENQUETE.png":      [{"type": "poll", "question": "ART é só papelada?", "options": ["Mito", "Verdade"], "y": 0.64}],
- "eng-2-resposta.png":         [],
- "eng-projeto_CAIXINHA.png":   [{"type": "question", "question": "Qual sua dúvida sobre construir sua casa?", "y": 0.66}],
- "cfcint-tempo_ENQUETE.png":   [{"type": "poll", "question": "O que mais toma seu tempo?", "options": ["Matrícula", "Cobrança", "Agenda", "Detran"], "y": 0.62}],
- "cfcint-matricula_ENQUETE.png": [{"type": "poll", "question": "Sua matrícula é sem digitar?", "options": ["Sim", "Não, digito tudo", "Uso planilha"], "y": 0.62}],
- "cfcint-3autoescolas_LINK.png": [{"type": "link", "url": "https://www.cfcinteligente.com.br", "text": "Peça uma demonstração", "y": 0.66}]
+ "_leia": "Sticker que o robô coloca em cada arte (chave = nome do arquivo sem a pasta e sem 'autoescola-<cidade>-'). [] = arte sem sticker. 'WHATSAPP' = link da conta em scripts/contas_robo.json. A posição (y) é calculada pelo robô: centro do espaço vazio da arte, conferida com dry_run. Emojis do slider: só os 40 de scripts/contas_robo.json. Quiz não existe: usar poll.",
+ "bastidor_SLIDER.png": [
+  {
+   "type": "slider",
+   "question": "Quão ansioso você está pra sua 1ª aula?",
+   "emoji": "😱"
+  }
+ ],
+ "mito_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Precisa ter carro próprio?",
+   "options": [
+    "Mito",
+    "Verdade"
+   ]
+  }
+ ],
+ "1-resposta.png": [],
+ "2-duvida_CAIXINHA.png": [
+  {
+   "type": "question",
+   "question": "Qual sua dúvida sobre a CNH?"
+  }
+ ],
+ "1-medo_SLIDER.png": [
+  {
+   "type": "slider",
+   "question": "Quanto medo você tem do trânsito?",
+   "emoji": "😱"
+  }
+ ],
+ "2-whatsapp_LINK.png": [
+  {
+   "type": "link",
+   "url": "WHATSAPP",
+   "text": "Chamar no WhatsApp"
+  }
+ ],
+ "placa_QUIZ.png": [
+  {
+   "type": "poll",
+   "question": "O que essa placa quer dizer?",
+   "options": [
+    "Velocidade máxima",
+    "Velocidade mínima"
+   ]
+  }
+ ],
+ "cidade_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Melhor lugar pra dirigir?",
+   "options": [
+    "Centro",
+    "Estrada",
+    "Ainda não dirijo 🙈"
+   ]
+  }
+ ],
+ "eng-1-aluguel_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Você paga aluguel hoje?",
+   "options": [
+    "Sim",
+    "Não"
+   ]
+  }
+ ],
+ "eng-2-chama_LINK.png": [
+  {
+   "type": "link",
+   "url": "WHATSAPP",
+   "text": "Quero sair do aluguel"
+  }
+ ],
+ "eng-1-art_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "ART é só papelada?",
+   "options": [
+    "Mito",
+    "Verdade"
+   ]
+  }
+ ],
+ "eng-2-resposta.png": [],
+ "eng-projeto_CAIXINHA.png": [
+  {
+   "type": "question",
+   "question": "Qual sua dúvida sobre construir sua casa?"
+  }
+ ],
+ "cfcint-tempo_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "O que mais toma seu tempo?",
+   "options": [
+    "Matrícula",
+    "Cobrança",
+    "Agenda",
+    "Detran"
+   ]
+  }
+ ],
+ "cfcint-matricula_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Sua matrícula é sem digitar?",
+   "options": [
+    "Sim",
+    "Não, digito tudo",
+    "Uso planilha"
+   ]
+  }
+ ],
+ "cfcint-3autoescolas_LINK.png": [
+  {
+   "type": "link",
+   "url": "https://www.cfcinteligente.com.br",
+   "text": "Peça uma demonstração"
+  }
+ ]
 }
