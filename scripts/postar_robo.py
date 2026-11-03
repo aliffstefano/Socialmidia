@@ -83,7 +83,11 @@ def publicar(perfil, arte, stickers):
             break
         time.sleep(10)
     antes = no_ar(ig)
-    r = chamar("/story", {"image_url": RAW + arte, "stickers": stickers}, token)
+    # Enquete vai sem pergunta (ela já está na arte). Se o serviço ainda exigir, manda com a pergunta.
+    sem_pergunta = [{k: v for k, v in st.items() if not (st["type"] == "poll" and k == "question")} for st in stickers]
+    r = chamar("/story", {"image_url": RAW + arte, "stickers": sem_pergunta}, token)
+    if not r.get("ok") and "question" in str(r.get("error", "")) and sem_pergunta != stickers:
+        r = chamar("/story", {"image_url": RAW + arte, "stickers": stickers}, token)
     if not r.get("ok"):
         return False, r.get("error") or "erro desconhecido"
     for _ in range(9):  # confirma na API da Meta
