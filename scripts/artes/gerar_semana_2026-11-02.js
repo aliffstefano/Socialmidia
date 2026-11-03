@@ -24,7 +24,7 @@ const box=(bg,t,logo='')=>`<!doctype html><html><head><meta charset="utf-8">${FO
 body{background:${bg};color:#fff}h1 em,.sub em{font-style:normal;background:#fff;color:${bg};padding:0 14px;border-radius:10px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 </style></head><body><div class="w"><div class="k">${t.k}</div><h1>${t.h}</h1>${t.sub?`<div class="sub">${t.sub}</div>`:''}</div>${logo}</body></html>`;
 const ENG='#0f3b40', CI='#2a1b8f', ciLogo=`<img class="logo" style="height:150px;border-radius:28px" src="${img('cfcint.jpg','jpeg')}">`;
-const r19=`<svg width="420" height="420" viewBox="0 0 420 420" style="margin-top:70px"><circle cx="210" cy="210" r="185" fill="#fff" stroke="#d0161c" stroke-width="44"/><text x="210" y="235" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="150" fill="#111">40</text><text x="210" y="310" text-anchor="middle" font-family="Arial" font-weight="700" font-size="44" fill="#111">km/h</text></svg>`;
+const r19=`<svg width="300" height="300" viewBox="0 0 420 420" style="margin-top:40px"><circle cx="210" cy="210" r="185" fill="#fff" stroke="#d0161c" stroke-width="44"/><text x="210" y="235" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900" font-size="150" fill="#111">40</text><text x="210" y="310" text-anchor="middle" font-family="Arial" font-weight="700" font-size="44" fill="#111">km/h</text></svg>`;
 
 const CID={eldorado:{n:'Eldorado',abre:'8h',hor:'Seg a sex · 8h–11h30 e 13h–18h',var:'DYALOG_ELDORADO'},
  caarapo:{n:'Caarapó',abre:'7h',hor:'Seg a sex · 7h–11h e 13h–18h · Sáb · 8h–12h',var:'DYALOG_CAARAPO'},

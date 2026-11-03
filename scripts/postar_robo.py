@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from avisar_whatsapp import enviar
 from coletar_insights import CONTAS, get
 from expediente import ajustar
+from espaco_livre import faixa
 
 RAIZ = os.path.join(os.path.dirname(__file__), "..")
 AG = os.path.join(RAIZ, "conteudo", "agenda")
@@ -45,6 +46,25 @@ def stickers_de(perfil, arte):
                 return None
         out.append(s)
     return out
+
+
+# Altura aproximada de cada sticker (fração da tela). Slider medido no 1º post (03/11); os outros são estimativa.
+ALTURA = {"slider": 0.24, "question": 0.24, "link": 0.08, "mention": 0.06, "hashtag": 0.06, "poll": 0.20}
+
+
+def posicionar(arte, stickers):
+    """Põe o sticker no centro da maior faixa vazia da arte. Devolve None se não couber (não publica)."""
+    a, b = faixa(os.path.join(RAIZ, arte))
+    precisa = sum(ALTURA.get(s["type"], 0.2) + (0.04 * max(0, len(s.get("options", [])) - 2) if s["type"] == "poll" else 0)
+                  for s in stickers)
+    if precisa > (b - a) + 0.01:
+        return None
+    topo = (a + b) / 2 - precisa / 2
+    for s in stickers:
+        alt = ALTURA.get(s["type"], 0.2) + (0.04 * max(0, len(s.get("options", [])) - 2) if s["type"] == "poll" else 0)
+        s["y"] = round(topo + alt / 2, 3)
+        topo += alt
+    return stickers
 
 
 def robo_cuida(perfil, cfg):
@@ -135,6 +155,8 @@ def main():
         stickers = stickers_de(perfil, s["arte"])
         if stickers is None:
             ok, motivo = False, "sticker desta arte não está em _stickers_robo.json"
+        elif stickers and posicionar(s["arte"], stickers) is None:
+            ok, motivo = False, "não há espaço vazio na arte para o sticker sem tampar o texto"
         else:
             ok, motivo = publicar(perfil, s["arte"], stickers)
         feitos[chave] = {"status": "publicado" if ok else "falhou", "quando": quando, **({"motivo": motivo} if motivo else {})}
