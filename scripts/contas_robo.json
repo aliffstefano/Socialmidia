@@ -1,0 +1,9 @@
+{
+ "autoescola-eldorado":  {"ig": "eldorado",       "token_env": "STORY_TOKEN_ELDORADO",  "whatsapp": "https://wa.me/5567996132269"},
+ "autoescola-caarapo":   {"ig": "caarapo",        "token_env": "STORY_TOKEN_CAARAPO",   "whatsapp": "https://wa.me/5567993010402"},
+ "autoescola-itaquirai": {"ig": "itaquirai",      "token_env": "STORY_TOKEN_ITAQUIRAI", "whatsapp": "https://wa.me/5567996181286"},
+ "eng.aliff":            {"ig": "eng.aliff",      "token_env": "STORY_TOKEN_ENG",       "whatsapp": "https://wa.me/5567998052186"},
+ "cfcinteligente":       {"ig": "cfcinteligente", "token_env": "STORY_TOKEN_CFCINT",    "whatsapp": null},
+ "_y_padrao": {"slider": 0.65, "question": 0.65, "link": 0.65, "poll2": 0.64, "poll34": 0.62},
+ "_emojis_slider": "😍😂😀🔥😡😱😢🙌❤️🎉👍💩💯🙏😮😴😭😒😎😲😩😐😇😷👏👀🐶🐱🐷🙈🙉🙊💔🌝🌚🌞👑🌈💰👻"
+}
