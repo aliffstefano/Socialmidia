@@ -57,16 +57,23 @@ def altura(st):
     return ALTURA_POLL.get(len(st.get("options", [])), 0.387) if st["type"] == "poll" else ALTURA.get(st["type"], 0.3)
 
 
+ESCALAS = (1.0, 0.8, 0.6)  # a pinça do serviço reduz ~20% por vez: 0.8 e 0.6 saem certos; abaixo de 0.6 fica ilegível
+
+
 def posicionar(arte, stickers):
-    """Põe o sticker no centro da maior faixa vazia da arte. Devolve None se não couber (não publica)."""
+    """Põe o sticker no centro da maior faixa vazia da arte, diminuindo (pinça) se precisar.
+    Devolve None se não couber nem em 60% (não publica)."""
     a, b = faixa(os.path.join(RAIZ, arte))
-    precisa = sum(altura(s) for s in stickers)
-    if precisa > (b - a) + 0.01:
+    base = sum(altura(s) for s in stickers)
+    escala = next((e for e in ESCALAS if base * e <= (b - a) + 0.01), None)
+    if escala is None:
         return None
-    topo = (a + b) / 2 - precisa / 2
+    topo = (a + b) / 2 - base * escala / 2
     for s in stickers:
-        s["y"] = round(topo + altura(s) / 2, 3)
-        topo += altura(s)
+        if escala < 1:
+            s["scale"] = escala
+        s["y"] = round(topo + altura(s) * escala / 2, 3)
+        topo += altura(s) * escala
     return stickers
 
 

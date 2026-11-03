@@ -54,8 +54,9 @@
    "question": "Melhor lugar pra dirigir?",
    "options": [
     "Centro",
+    "Bairro",
     "Estrada",
-    "Ainda não dirijo 🙈"
+    "Ainda não dirijo"
    ]
   }
  ],
