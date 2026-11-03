@@ -121,6 +121,17 @@ def conferir(arte, stickers, token):
         if r.get("conexao"):  # dry_run não publica: pode repetir
             esperar_livre()
             r = chamar("/story", {"image_url": RAW + arte, "stickers": stickers, "dry_run": True}, token)
+        if not r.get("ok") and "posicionar" in str(r.get("error", "")):
+            # o arraste às vezes não "pega" num y específico: tenta um pouco acima/abaixo, dentro do espaço vazio
+            for d in (-0.07, 0.07, -0.12, 0.12):
+                alt = [{**st, "y": round(st["y"] + d, 3)} for st in stickers]
+                if all(a <= st["y"] - altura(st) * st.get("scale", 1) / 2 and st["y"] + altura(st) * st.get("scale", 1) / 2 <= b
+                       for st in alt):
+                    esperar_livre()
+                    r = chamar("/story", {"image_url": RAW + arte, "stickers": alt, "dry_run": True}, token)
+                    if r.get("ok"):
+                        stickers = alt
+                        break
         if not r.get("ok"):
             return None, r.get("error") or "dry_run falhou"
         caixas = r.get("boxes") or []
