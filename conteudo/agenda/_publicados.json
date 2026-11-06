@@ -54,5 +54,10 @@
  "2026-11-06|autoescola-itaquirai|conteudo/artes/2026-11-06/autoescola-itaquirai-2-whatsapp_LINK.png": {
   "status": "publicado",
   "quando": "2026-11-06 19:10"
+ },
+ "2026-11-06|eng.aliff|conteudo/artes/2026-11-06/eng-projeto_CAIXINHA.png": {
+  "status": "falhou",
+  "quando": "2026-11-06 19:32",
+  "motivo": "não consegui mover o adesivo para o y pedido"
  }
 }
