@@ -19,5 +19,10 @@
   "status": "publicado",
   "quando": "2026-11-03 19:42",
   "obs": "reenviado à mão pelo Claude (y 0.6)"
+ },
+ "2026-11-06|autoescola-caarapo|conteudo/artes/2026-11-06/autoescola-caarapo-exame-torcida_SLIDER.png": {
+  "status": "falhou",
+  "quando": "2026-11-06 06:51",
+  "motivo": "HTTP 502"
  }
 }
