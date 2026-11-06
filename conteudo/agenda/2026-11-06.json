@@ -25,6 +25,20 @@
   "para": "DYALOG_CAARAPO",
   "stories": [
    {
+    "hora": "07:00",
+    "arte": "conteudo/artes/2026-11-06/autoescola-caarapo-exame-torcida_SLIDER.png",
+    "sticker": "Emoji slider 🙏",
+    "opcoes": "Pergunta: Manda sua energia!",
+    "codigo": "06/11-A3"
+   },
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-11-06/autoescola-caarapo-exame-lembranca_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Tremi inteiro 😅 / Fui tranquilo 😎",
+    "codigo": "06/11-A4"
+   },
+   {
     "hora": "12:30",
     "arte": "conteudo/artes/2026-11-06/autoescola-caarapo-1-medo_SLIDER.png",
     "sticker": "Emoji slider 😨",

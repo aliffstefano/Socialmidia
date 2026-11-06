@@ -123,5 +123,22 @@
    "url": "https://www.cfcinteligente.com.br",
    "text": "Peça uma demonstração"
   }
+ ],
+ "exame-torcida_SLIDER.png": [
+  {
+   "type": "slider",
+   "question": "Manda sua energia!",
+   "emoji": "🙏"
+  }
+ ],
+ "exame-lembranca_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Como foi seu exame prático?",
+   "options": [
+    "Tremi inteiro 😅",
+    "Fui tranquilo 😎"
+   ]
+  }
  ]
 }
