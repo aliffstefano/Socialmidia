@@ -29,5 +29,18 @@
   "status": "falhou",
   "quando": "2026-11-06 08:02",
   "motivo": "HTTP 502"
+ },
+ "2026-11-06|autoescola-eldorado|conteudo/artes/2026-11-06/autoescola-eldorado-1-medo_SLIDER.png": {
+  "status": "publicado",
+  "quando": "2026-11-06 12:32"
+ },
+ "2026-11-06|autoescola-caarapo|conteudo/artes/2026-11-06/autoescola-caarapo-1-medo_SLIDER.png": {
+  "status": "publicado",
+  "quando": "2026-11-06 12:35"
+ },
+ "2026-11-06|autoescola-itaquirai|conteudo/artes/2026-11-06/autoescola-itaquirai-1-medo_SLIDER.png": {
+  "status": "falhou",
+  "quando": "2026-11-06 12:37",
+  "motivo": "não consegui posicionar o adesivo no y pedido"
  }
 }
