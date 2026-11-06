@@ -24,5 +24,10 @@
   "status": "falhou",
   "quando": "2026-11-06 06:51",
   "motivo": "HTTP 502"
+ },
+ "2026-11-06|autoescola-caarapo|conteudo/artes/2026-11-06/autoescola-caarapo-exame-lembranca_ENQUETE.png": {
+  "status": "falhou",
+  "quando": "2026-11-06 08:02",
+  "motivo": "HTTP 502"
  }
 }
