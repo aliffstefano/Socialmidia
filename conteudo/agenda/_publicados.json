@@ -63,5 +63,20 @@
  "2026-11-07|cfcinteligente|conteudo/artes/2026-11-07/cfcint-3autoescolas_LINK.png": {
   "status": "publicado",
   "quando": "2026-11-07 08:02"
+ },
+ "2026-11-07|autoescola-eldorado|conteudo/artes/2026-11-07/autoescola-eldorado-placa_QUIZ.png": {
+  "status": "falhou",
+  "quando": "2026-11-07 09:02",
+  "motivo": "não consegui mover o adesivo para o y pedido"
+ },
+ "2026-11-07|autoescola-caarapo|conteudo/artes/2026-11-07/autoescola-caarapo-placa_QUIZ.png": {
+  "status": "falhou",
+  "quando": "2026-11-07 09:03",
+  "motivo": "não consegui mover o adesivo para o y pedido"
+ },
+ "2026-11-07|autoescola-itaquirai|conteudo/artes/2026-11-07/autoescola-itaquirai-placa_QUIZ.png": {
+  "status": "falhou",
+  "quando": "2026-11-07 09:05",
+  "motivo": "não consegui mover o adesivo para o y pedido"
  }
 }
