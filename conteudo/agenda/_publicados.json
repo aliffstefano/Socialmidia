@@ -78,5 +78,17 @@
   "status": "falhou",
   "quando": "2026-11-07 09:05",
   "motivo": "não consegui mover o adesivo para o y pedido"
+ },
+ "2026-11-08|autoescola-eldorado|conteudo/artes/2026-11-08/autoescola-eldorado-cidade_ENQUETE.png": {
+  "status": "publicado",
+  "quando": "2026-11-08 10:02"
+ },
+ "2026-11-08|autoescola-caarapo|conteudo/artes/2026-11-08/autoescola-caarapo-cidade_ENQUETE.png": {
+  "status": "publicado",
+  "quando": "2026-11-08 10:05"
+ },
+ "2026-11-08|autoescola-itaquirai|conteudo/artes/2026-11-08/autoescola-itaquirai-cidade_ENQUETE.png": {
+  "status": "publicado",
+  "quando": "2026-11-08 10:07"
  }
 }
