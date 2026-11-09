@@ -11,7 +11,7 @@ Uso:
   python3 scripts/avisar_whatsapp.py --para DYALOG_ELDORADO --imagem arte.png "legenda"
 Destino não configurado: apenas avisa e sai sem erro.
 """
-import argparse, base64, json, os, sys, urllib.error, urllib.request
+import argparse, base64, json, os, sys, time, urllib.error, urllib.request
 
 BASE = "https://connect.dyalog.com.br/api/v1/batepapo/enviar"
 
@@ -33,14 +33,21 @@ def enviar(texto, para="DYALOG_NUMERO", imagem=None):
     req = urllib.request.Request(url, data=json.dumps(corpo).encode(), method="POST",
                                  headers={"X-Access-Token": token, "Content-Type": "application/json",
                                           "User-Agent": "socialmidia-agente/1.0"})  # Cloudflare bloqueia o UA padrão do urllib (erro 1010)
-    try:
-        resp = json.load(urllib.request.urlopen(req, timeout=60))
-    except urllib.error.HTTPError as e:
-        bruto = e.read().decode(errors="replace")
+    # 502/503/504 = Dyalog fora do ar por instantes: tenta de novo (30s, 1min30, 3min). Outros erros não repetem.
+    for espera in (30, 90, 180, None):
         try:
-            resp = json.loads(bruto)
-        except ValueError:
-            resp = {"erro": f"HTTP {e.code}", "mensagem": bruto[:200]}
+            resp = json.load(urllib.request.urlopen(req, timeout=60))
+            break
+        except urllib.error.HTTPError as e:
+            bruto = e.read().decode(errors="replace")
+            try:
+                resp = json.loads(bruto)
+            except ValueError:
+                resp = {"erro": f"HTTP {e.code}", "mensagem": bruto[:200]}
+            if e.code not in (502, 503, 504) or espera is None:
+                break
+            print(f"{para}: HTTP {e.code}, nova tentativa em {espera}s")
+            time.sleep(espera)
     ok = bool(resp.get("sucesso"))
     print(f"{para}: " + ("enviado" if ok else f"falhou: {resp.get('erro')} {resp.get('mensagem')}"))
     return ok
