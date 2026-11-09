@@ -140,5 +140,116 @@
     "Fui tranquilo 😎"
    ]
   }
+ ],
+ "placa-preferencia_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Qual é essa placa?",
+   "options": [
+    "Parada obrigatória",
+    "Dê a preferência"
+   ]
+  }
+ ],
+ "baliza_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Você sabia?",
+   "options": [
+    "Eu sabia",
+    "Não sabia"
+   ]
+  }
+ ],
+ "mito-motor_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Mito ou verdade?",
+   "options": [
+    "Mito",
+    "Verdade"
+   ]
+  }
+ ],
+ "1-resposta-motor.png": [],
+ "1-estrada_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Medo de dirigir na estrada?",
+   "options": [
+    "Sim",
+    "Não"
+   ]
+  }
+ ],
+ "1-pontos_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Quantos pontos?",
+   "options": [
+    "20",
+    "30",
+    "40"
+   ]
+  }
+ ],
+ "2-pontos-resposta.png": [],
+ "memoria_CAIXINHA.png": [
+  {
+   "type": "question",
+   "question": "Qual cuidado você nunca esquece ao volante?"
+  }
+ ],
+ "eng-1-terreno_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Você já tem terreno?",
+   "options": [
+    "Sim, tenho",
+    "Ainda não"
+   ]
+  }
+ ],
+ "eng-2-terreno_LINK.png": [
+  {
+   "type": "link",
+   "url": "WHATSAPP",
+   "text": "Meu terreno vira casa?"
+  }
+ ],
+ "eng-1-alvara_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Mito ou verdade?",
+   "options": [
+    "Mito",
+    "Verdade"
+   ]
+  }
+ ],
+ "eng-2-alvara-resposta.png": [],
+ "eng-terreno_CAIXINHA.png": [
+  {
+   "type": "question",
+   "question": "Qual sua dúvida sobre terreno ou construção?"
+  }
+ ],
+ "cfcint-cobranca_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Você já faz isso?",
+   "options": [
+    "Sim",
+    "Não, cobro um a um",
+    "Quero fazer"
+   ]
+  }
+ ],
+ "cfcint-demo_LINK.png": [
+  {
+   "type": "link",
+   "url": "https://www.cfcinteligente.com.br",
+   "text": "Peça uma demonstração"
+  }
  ]
 }

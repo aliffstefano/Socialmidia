@@ -1,0 +1,45 @@
+{
+ "_aprovado": false,
+ "autoescola-eldorado": {
+  "nome": "Nova Alvorada Eldorado",
+  "para": "DYALOG_ELDORADO",
+  "stories": [
+   {
+    "hora": "10:00",
+    "arte": "conteudo/artes/2026-11-15/autoescola-eldorado-memoria_CAIXINHA.png",
+    "sticker": "Caixinha de perguntas",
+    "opcoes": "Pergunta: Qual cuidado você nunca esquece ao volante? · dia sério, sem humor nem promoção",
+    "codigo": "15/11-A1"
+   }
+  ],
+  "obs": "Domingo e Dia Mundial em Memória das Vítimas de Trânsito: tom sério, o robô posta."
+ },
+ "autoescola-caarapo": {
+  "nome": "Nova Alvorada Caarapó",
+  "para": "DYALOG_CAARAPO",
+  "stories": [
+   {
+    "hora": "10:00",
+    "arte": "conteudo/artes/2026-11-15/autoescola-caarapo-memoria_CAIXINHA.png",
+    "sticker": "Caixinha de perguntas",
+    "opcoes": "Pergunta: Qual cuidado você nunca esquece ao volante? · dia sério, sem humor nem promoção",
+    "codigo": "15/11-A1"
+   }
+  ],
+  "obs": "Domingo e Dia Mundial em Memória das Vítimas de Trânsito: tom sério, o robô posta."
+ },
+ "autoescola-itaquirai": {
+  "nome": "Nova Alvorada Itaquiraí",
+  "para": "DYALOG_ITAQUIRAI",
+  "stories": [
+   {
+    "hora": "10:00",
+    "arte": "conteudo/artes/2026-11-15/autoescola-itaquirai-memoria_CAIXINHA.png",
+    "sticker": "Caixinha de perguntas",
+    "opcoes": "Pergunta: Qual cuidado você nunca esquece ao volante? · dia sério, sem humor nem promoção",
+    "codigo": "15/11-A1"
+   }
+  ],
+  "obs": "Domingo e Dia Mundial em Memória das Vítimas de Trânsito: tom sério, o robô posta."
+ }
+}

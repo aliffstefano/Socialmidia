@@ -1,0 +1,79 @@
+{
+ "_aprovado": false,
+ "autoescola-eldorado": {
+  "nome": "Nova Alvorada Eldorado",
+  "para": "DYALOG_ELDORADO",
+  "stories": [
+   {
+    "hora": "10:00",
+    "arte": "conteudo/artes/2026-11-14/autoescola-eldorado-1-pontos_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: 20 / 30 / 40 ✅(sem gravíssima) · resposta às 19h",
+    "codigo": "14/11-A1"
+   },
+   {
+    "hora": "19:00",
+    "arte": "conteudo/artes/2026-11-14/autoescola-eldorado-2-pontos-resposta.png",
+    "sticker": "Nenhum",
+    "opcoes": "",
+    "codigo": "14/11-A2"
+   }
+  ],
+  "obs": "Eldorado fechada hoje: o robô posta, respostas na segunda."
+ },
+ "autoescola-caarapo": {
+  "nome": "Nova Alvorada Caarapó",
+  "para": "DYALOG_CAARAPO",
+  "stories": [
+   {
+    "hora": "10:00",
+    "arte": "conteudo/artes/2026-11-14/autoescola-caarapo-1-pontos_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: 20 / 30 / 40 ✅(sem gravíssima) · resposta às 19h",
+    "codigo": "14/11-A1"
+   },
+   {
+    "hora": "19:00",
+    "arte": "conteudo/artes/2026-11-14/autoescola-caarapo-2-pontos-resposta.png",
+    "sticker": "Nenhum",
+    "opcoes": "",
+    "codigo": "14/11-A2"
+   }
+  ],
+  "obs": "Eldorado fechada hoje: o robô posta, respostas na segunda."
+ },
+ "autoescola-itaquirai": {
+  "nome": "Nova Alvorada Itaquiraí",
+  "para": "DYALOG_ITAQUIRAI",
+  "stories": [
+   {
+    "hora": "10:00",
+    "arte": "conteudo/artes/2026-11-14/autoescola-itaquirai-1-pontos_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: 20 / 30 / 40 ✅(sem gravíssima) · resposta às 19h",
+    "codigo": "14/11-A1"
+   },
+   {
+    "hora": "19:00",
+    "arte": "conteudo/artes/2026-11-14/autoescola-itaquirai-2-pontos-resposta.png",
+    "sticker": "Nenhum",
+    "opcoes": "",
+    "codigo": "14/11-A2"
+   }
+  ],
+  "obs": "Eldorado fechada hoje: o robô posta, respostas na segunda."
+ },
+ "cfcinteligente": {
+  "nome": "@cfcinteligente",
+  "para": "DYALOG_NUMERO",
+  "stories": [
+   {
+    "hora": "10:00",
+    "arte": "conteudo/artes/2026-11-14/cfcint-demo_LINK.png",
+    "sticker": "Link",
+    "opcoes": "Link: www.cfcinteligente.com.br · Texto: Peça uma demonstração",
+    "codigo": "14/11-C1"
+   }
+  ]
+ }
+}

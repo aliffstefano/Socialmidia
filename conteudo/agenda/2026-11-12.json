@@ -1,0 +1,76 @@
+{
+ "_aprovado": false,
+ "autoescola-eldorado": {
+  "nome": "Nova Alvorada Eldorado",
+  "para": "DYALOG_ELDORADO",
+  "stories": [
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-11-12/autoescola-eldorado-1-resposta-motor.png",
+    "sticker": "Nenhum",
+    "opcoes": "",
+    "codigo": "12/11-A1"
+   },
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-12/autoescola-eldorado-2-duvida_CAIXINHA.png",
+    "sticker": "Caixinha de perguntas",
+    "opcoes": "Pergunta: Qual sua dúvida sobre a CNH?",
+    "codigo": "12/11-A2"
+   }
+  ]
+ },
+ "autoescola-caarapo": {
+  "nome": "Nova Alvorada Caarapó",
+  "para": "DYALOG_CAARAPO",
+  "stories": [
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-11-12/autoescola-caarapo-1-resposta-motor.png",
+    "sticker": "Nenhum",
+    "opcoes": "",
+    "codigo": "12/11-A1"
+   },
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-12/autoescola-caarapo-2-duvida_CAIXINHA.png",
+    "sticker": "Caixinha de perguntas",
+    "opcoes": "Pergunta: Qual sua dúvida sobre a CNH?",
+    "codigo": "12/11-A2"
+   }
+  ]
+ },
+ "autoescola-itaquirai": {
+  "nome": "Nova Alvorada Itaquiraí",
+  "para": "DYALOG_ITAQUIRAI",
+  "stories": [
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-11-12/autoescola-itaquirai-1-resposta-motor.png",
+    "sticker": "Nenhum",
+    "opcoes": "",
+    "codigo": "12/11-A1"
+   },
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-12/autoescola-itaquirai-2-duvida_CAIXINHA.png",
+    "sticker": "Caixinha de perguntas",
+    "opcoes": "Pergunta: Qual sua dúvida sobre a CNH?",
+    "codigo": "12/11-A2"
+   }
+  ]
+ },
+ "cfcinteligente": {
+  "nome": "@cfcinteligente",
+  "para": "DYALOG_NUMERO",
+  "stories": [
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-11-12/cfcint-cobranca_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Sim / Não, cobro um a um / Quero fazer",
+    "codigo": "12/11-C1"
+   }
+  ]
+ }
+}
