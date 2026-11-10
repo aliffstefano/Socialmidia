@@ -44,13 +44,12 @@
   "para": "DYALOG_NUMERO",
   "stories": [
    {
-    "hora": "08:00",
+    "hora": "12:30",
     "arte": "conteudo/artes/2026-11-10/cfcint-tempo_ENQUETE.png",
     "sticker": "Enquete",
     "opcoes": "Opções: Matrícula / Cobrança / Agenda / Detran · a de 03/11 não foi ao ar, repete",
     "codigo": "10/11-C1"
    }
-  ],
-  "aprovado": false
+  ]
  }
 }

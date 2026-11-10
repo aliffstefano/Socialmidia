@@ -49,7 +49,7 @@ const ENGS=[
  ['2026-11-11','eng-2-alvara-resposta','19:00','Nenhum','',{k:'Resposta',h:'Mito.',sub:'Obra sem alvará pode gerar <em>multa</em> e travar venda, financiamento e regularização. Antes de construir, confira na prefeitura.'}],
  ['2026-11-13','eng-terreno_CAIXINHA','12:30','Caixinha de perguntas','Pergunta: Qual sua dúvida sobre terreno ou construção?',{k:'Pode perguntar',h:'Qual sua dúvida sobre <em>terreno</em> ou construção?',sub:'Respondo aqui nos Stories. 👇'}]];
 const CIS=[
- ['2026-11-10','cfcint-tempo_ENQUETE','08:00','Enquete','Opções: Matrícula / Cobrança / Agenda / Detran · a de 03/11 não foi ao ar, repete',{k:'Dono de CFC',h:'O que mais toma seu <em>tempo</em> hoje?',sub:'Responde em 1 toque. 👇'}],
+ ['2026-11-10','cfcint-tempo_ENQUETE','12:30','Enquete','Opções: Matrícula / Cobrança / Agenda / Detran · a de 03/11 não foi ao ar, repete',{k:'Dono de CFC',h:'O que mais toma seu <em>tempo</em> hoje?',sub:'Responde em 1 toque. 👇'}],
  ['2026-11-12','cfcint-cobranca_ENQUETE','08:00','Enquete','Opções: Sim / Não, cobro um a um / Quero fazer',{k:'Função da semana',h:'Cobrança e lembrete <em>no WhatsApp</em>.',sub:'Automático. Você já faz isso?'}],
  ['2026-11-14','cfcint-demo_LINK','10:00','Link','Link: www.cfcinteligente.com.br · Texto: Peça uma demonstração',{k:'CFC Inteligente',h:'Matrícula, cobrança e agenda <em>num lugar só</em>.',sub:'Quer ver funcionando no seu CFC? 👇'}]];
 (async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:1080,height:1920}});
