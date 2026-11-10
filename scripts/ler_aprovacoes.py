@@ -69,8 +69,11 @@ def main():
             for f in alvos:
                 if os.path.exists(f):
                     ag = json.load(open(f, encoding="utf-8"))
-                    if not ag.get("_aprovado"):
+                    pend = [k for k, v in ag.items() if isinstance(v, dict) and v.get("aprovado") is False]
+                    if not ag.get("_aprovado") or pend:
                         ag["_aprovado"] = True
+                        for k in pend:
+                            del ag[k]["aprovado"]
                         json.dump(ag, open(f, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
                         print("aprovado:", os.path.basename(f)[:10])
         elif cmd.startswith("AJUSTE"):

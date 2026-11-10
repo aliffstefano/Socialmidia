@@ -68,7 +68,8 @@ for f in sorted(glob.glob(os.path.join(RAIZ, "conteudo/agenda/20*.json"))):
                 "codigo": s.get("codigo", ""), "thumb": thumb, "quem": quem, "obs": bloco.get("obs", ""),
             })
     itens.sort(key=lambda i: (i["hora"], i["grupo"]))
-    dias.append({"data": data, "aprovado": bool(ag.get("_aprovado")), "itens": itens})
+    dias.append({"data": data, "aprovado": bool(ag.get("_aprovado")) and not any(
+        isinstance(v, dict) and v.get("aprovado") is False for v in ag.values()), "itens": itens})
 
 agora = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-4)))
 dados = {"gerado": agora.strftime("%d/%m às %H:%M"), "dias": dias, "outros": OUTROS}

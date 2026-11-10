@@ -1,5 +1,5 @@
 {
- "_aprovado": false,
+ "_aprovado": true,
  "autoescola-eldorado": {
   "nome": "Nova Alvorada Eldorado",
   "para": "DYALOG_ELDORADO",
@@ -71,6 +71,7 @@
     "opcoes": "Opções: Sim / Não, cobro um a um / Quero fazer",
     "codigo": "12/11-C1"
    }
-  ]
+  ],
+  "aprovado": false
  }
 }

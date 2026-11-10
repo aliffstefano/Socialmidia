@@ -195,8 +195,8 @@ def main():
     feitos = ler("_publicados.json", {})
     fila = []
     for perfil, cfg in agenda.items():
-        if perfil.startswith("_") or perfil not in CFG:
-            continue
+        if perfil.startswith("_") or perfil not in CFG or cfg.get("aprovado") is False:
+            continue  # "aprovado": false no perfil = só esse perfil ainda não foi aprovado
         for s in cfg["stories"]:
             chave = f"{data}|{perfil}|{s['arte']}"
             if chave in feitos or _m(s["hora"]) > minuto + 5:

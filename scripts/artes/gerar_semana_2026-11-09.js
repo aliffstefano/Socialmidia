@@ -33,7 +33,7 @@ const CID={eldorado:{n:'Eldorado',abre:'8h',hor:'Seg a sex · 8h–11h30 e 13h�
 // [data, arquivo, tema, hora, sticker, opcoes, fn(cidade)->texto]
 const NA=[
  ['2026-11-09','placa-preferencia_ENQUETE','branco','12:30','Enquete','Opções: Parada obrigatória / Dê a preferência ✅(correta)',c=>({k:'Quiz de placa 🚦',h:'Qual é <em>essa placa</em>?',extra:r2})],
- ['2026-11-10','baliza_ENQUETE','preto','08:00','Enquete','Opções: Eu sabia / Não sabia',c=>({k:'Você sabia?',h:'A <em>baliza</em> saiu da prova prática.',sub:'Mas na rua você vai precisar. E a gente ensina. 🅿️'})],
+ ['2026-11-10','baliza_ENQUETE','preto','12:30','Enquete','Opções: Eu sabia / Não sabia',c=>({k:'Você sabia?',h:'A <em>baliza</em> saiu da prova prática.',sub:'Mas na rua você vai precisar. E a gente ensina. 🅿️'})],
  ['2026-11-11','mito-motor_ENQUETE','branco','12:30','Enquete','Opções: Mito / Verdade (a resposta sai amanhã 8h)',c=>({k:'Mito ou verdade?',h:'Deixou o carro <em>morrer</em> na prova, reprovou.'})],
  ['2026-11-12','1-resposta-motor','preto','08:00','Nenhum','',c=>({k:'Resposta de ontem',h:'Mito! ✅',sub:'Deixar o carro morrer <em>uma vez</em> não reprova. Se morrer duas vezes, aí reprova. Calma e embreagem no ponto. 😉'})],
  ['2026-11-12','2-duvida_CAIXINHA','branco','12:30','Caixinha de perguntas','Pergunta: Qual sua dúvida sobre a CNH?',c=>({k:'Responde aqui 👇',h:'Qual sua <em>dúvida</em> sobre a CNH?',sub:'A gente responde nos Stories.'})],
@@ -65,6 +65,7 @@ const CIS=[
    const dm=`${d.slice(8)}/${d.slice(5,7)}`;
    for(const [k,cfg] of Object.entries(o)){const pre=k.startsWith('autoescola')?'A':k==='eng.aliff'?'E':'C';cfg.stories.forEach((st,i)=>st.codigo=`${dm}-${pre}${i+1}`);}
    const arq=`${R}/agenda/${d}.json`; let aprovado=false;
-   if(fs.existsSync(arq)) aprovado=!!JSON.parse(fs.readFileSync(arq,'utf8'))._aprovado;
+   if(fs.existsSync(arq)){const v=JSON.parse(fs.readFileSync(arq,'utf8'));aprovado=!!v._aprovado;
+     for(const k of Object.keys(o)) if(v[k]&&v[k].aprovado===false) o[k].aprovado=false;}  // preserva perfil pendente
    fs.mkdirSync(`${R}/agenda`,{recursive:true});fs.writeFileSync(arq,JSON.stringify({_aprovado:aprovado,...o},null,1));}
  await b.close();console.log(Object.keys(ag).join(' '));})();

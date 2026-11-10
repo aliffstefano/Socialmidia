@@ -37,7 +37,7 @@ def main():
         return
     automaticos = []
     for perfil, cfg in agenda.items():
-        if perfil.startswith("_"):
+        if perfil.startswith("_") or cfg.get("aprovado") is False:
             continue
         if postar_robo.robo_cuida(perfil, cfg):  # o robô do Android posta no horário (postar_robo.py)
             automaticos += [f"{cfg.get('nome', perfil)} às {s['hora']}" for s in cfg["stories"]]

@@ -1,5 +1,5 @@
 {
- "_aprovado": false,
+ "_aprovado": true,
  "autoescola-eldorado": {
   "nome": "Nova Alvorada Eldorado",
   "para": "DYALOG_ELDORADO",
@@ -71,6 +71,7 @@
     "opcoes": "Pergunta: Qual sua dúvida sobre terreno ou construção?",
     "codigo": "13/11-E1"
    }
-  ]
+  ],
+  "aprovado": false
  }
 }

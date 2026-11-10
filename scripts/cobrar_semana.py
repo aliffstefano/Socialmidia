@@ -21,8 +21,10 @@ for d in dias:
     arq = os.path.join(AGENDA, f"{d.isoformat()}.json")
     if not os.path.exists(arq):
         faltam.append(d)
-    elif not json.load(open(arq, encoding="utf-8")).get("_aprovado"):
-        sem_ok.append(d)
+    else:
+        ag = json.load(open(arq, encoding="utf-8"))
+        if not ag.get("_aprovado") or any(isinstance(v, dict) and v.get("aprovado") is False for v in ag.values()):
+            sem_ok.append(d)
 
 fmt = lambda ds: ", ".join(d.strftime("%d/%m") for d in ds)
 rotulo = f"{dias[0]:%d/%m} a {dias[-1]:%d/%m}"

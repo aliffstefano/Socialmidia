@@ -1,11 +1,11 @@
 {
- "_aprovado": false,
+ "_aprovado": true,
  "autoescola-eldorado": {
   "nome": "Nova Alvorada Eldorado",
   "para": "DYALOG_ELDORADO",
   "stories": [
    {
-    "hora": "08:00",
+    "hora": "12:30",
     "arte": "conteudo/artes/2026-11-10/autoescola-eldorado-baliza_ENQUETE.png",
     "sticker": "Enquete",
     "opcoes": "Opções: Eu sabia / Não sabia",
@@ -18,7 +18,7 @@
   "para": "DYALOG_CAARAPO",
   "stories": [
    {
-    "hora": "08:00",
+    "hora": "12:30",
     "arte": "conteudo/artes/2026-11-10/autoescola-caarapo-baliza_ENQUETE.png",
     "sticker": "Enquete",
     "opcoes": "Opções: Eu sabia / Não sabia",
@@ -31,7 +31,7 @@
   "para": "DYALOG_ITAQUIRAI",
   "stories": [
    {
-    "hora": "08:00",
+    "hora": "12:30",
     "arte": "conteudo/artes/2026-11-10/autoescola-itaquirai-baliza_ENQUETE.png",
     "sticker": "Enquete",
     "opcoes": "Opções: Eu sabia / Não sabia",
@@ -50,6 +50,7 @@
     "opcoes": "Opções: Matrícula / Cobrança / Agenda / Detran · a de 03/11 não foi ao ar, repete",
     "codigo": "10/11-C1"
    }
-  ]
+  ],
+  "aprovado": false
  }
 }
