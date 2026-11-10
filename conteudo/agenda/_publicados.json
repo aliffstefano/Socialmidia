@@ -110,5 +110,22 @@
  "2026-11-09|eng.aliff|conteudo/artes/2026-11-09/eng-2-terreno_LINK.png": {
   "status": "publicado",
   "quando": "2026-11-09 13:02"
+ },
+ "2026-11-10|autoescola-eldorado|conteudo/artes/2026-11-10/autoescola-eldorado-baliza_ENQUETE.png": {
+  "status": "falhou",
+  "quando": "2026-11-10 12:32",
+  "motivo": "o serviço disse ok, mas o story não apareceu na conta"
+ },
+ "2026-11-10|autoescola-caarapo|conteudo/artes/2026-11-10/autoescola-caarapo-baliza_ENQUETE.png": {
+  "status": "publicado",
+  "quando": "2026-11-10 12:36"
+ },
+ "2026-11-10|autoescola-itaquirai|conteudo/artes/2026-11-10/autoescola-itaquirai-baliza_ENQUETE.png": {
+  "status": "publicado",
+  "quando": "2026-11-10 12:38"
+ },
+ "2026-11-10|cfcinteligente|conteudo/artes/2026-11-10/cfcint-tempo_ENQUETE.png": {
+  "status": "publicado",
+  "quando": "2026-11-10 12:41"
  }
 }
