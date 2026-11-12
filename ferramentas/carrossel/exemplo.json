@@ -1,0 +1,31 @@
+{
+  "perfil": "autoescolas",
+  "unidade": "itaquirai",
+  "tema": "erros-na-baliza",
+  "slides": [
+    {
+      "tipo": "capa",
+      "rotulo": "Prova prática",
+      "titulo": "3 erros que **reprovam** na baliza",
+      "subtitulo": "E o que fazer em cada um no dia da prova."
+    },
+    {
+      "tipo": "conteudo",
+      "numero": 1,
+      "titulo": "Encostar no **cone**",
+      "texto": "Sentiu que vai encostar? Pare, respire e corrija com calma.",
+      "itens": ["Use o retrovisor como referência", "Movimentos curtos no volante"]
+    },
+    {
+      "tipo": "destaque",
+      "texto": "Errar na aula é **parte do treino**. Na prova, é só repetir o que você já treinou."
+    },
+    {
+      "tipo": "cta",
+      "titulo": "Salva pra revisar **antes da prova**",
+      "texto": "Manda pra quem vai fazer a prova este mês.",
+      "botao": "Chama no WhatsApp",
+      "extra": "Link na bio"
+    }
+  ]
+}

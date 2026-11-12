@@ -1,0 +1,98 @@
+{
+  "autoescolas": {
+    "nome": "CFC Nova Alvorada",
+    "conceito": "Placa de trânsito + nascer do sol: creme quente, azul-marinho de confiança e amarelo de sinalização como marca-texto. Acolhedor e didático.",
+    "handles": {
+      "itaquirai": "@cfcnovaalvoradaitaquirai",
+      "eldorado": "@cfcnovaalvoradaeldorado",
+      "caarapo": "@cfcnovaalvoradacaarapo",
+      "todas": "CFC Nova Alvorada · Itaquiraí · Eldorado · Caarapó"
+    },
+    "cores": {
+      "fundo": "#FFF7E8",
+      "fundoAlt": "#12233F",
+      "texto": "#12233F",
+      "textoSuave": "#4A5A75",
+      "acento": "#FFB703",
+      "acentoTexto": "#12233F",
+      "textoAlt": "#FFF7E8",
+      "linha": "#F1E3C4"
+    },
+    "destaque": "marca",
+    "fontes": {
+      "titulo": { "familia": "Poppins", "arquivo": "poppins-800", "peso": 800 },
+      "subtitulo": { "familia": "Poppins", "arquivo": "poppins-600", "peso": 600 },
+      "corpo": { "familia": "Nunito", "arquivo": "nunito-400", "peso": 400 },
+      "corpoForte": { "familia": "Nunito", "arquivo": "nunito-700", "peso": 700 }
+    }
+  },
+  "cfc-inteligente": {
+    "nome": "CFC Inteligente",
+    "conceito": "Painel de tecnologia: grafite escuro, grade de pontos e um único verde 'sinal aberto'. Moderno, orientado a dados.",
+    "handles": { "padrao": "[PREENCHER @]" },
+    "cores": {
+      "fundo": "#0D1117",
+      "fundoAlt": "#22E07A",
+      "texto": "#EEF2F6",
+      "textoSuave": "#9AA6B2",
+      "acento": "#22E07A",
+      "acentoTexto": "#0D1117",
+      "textoAlt": "#0D1117",
+      "linha": "#1C2430"
+    },
+    "destaque": "cor",
+    "fontes": {
+      "titulo": { "familia": "Space Grotesk", "arquivo": "spacegrotesk-700", "peso": 700 },
+      "subtitulo": { "familia": "Space Grotesk", "arquivo": "spacegrotesk-500", "peso": 500 },
+      "corpo": { "familia": "Inter", "arquivo": "inter-400", "peso": 400 },
+      "corpoForte": { "familia": "Inter", "arquivo": "inter-600", "peso": 600 },
+      "mono": { "familia": "IBM Plex Mono", "arquivo": "plexmono-500", "peso": 500 }
+    }
+  },
+  "engenheiro": {
+    "nome": "Eng. Aliff Stefano",
+    "conceito": "Prancha técnica: papel claro com grade de projeto, azul-petróleo e laranja de segurança de obra. Confiável e técnico, sem frieza.",
+    "handles": { "padrao": "@eng.aliff" },
+    "rodapeExtra": "CREA-MS 68001",
+    "cores": {
+      "fundo": "#F3F1EC",
+      "fundoAlt": "#1B2A3A",
+      "texto": "#1B2A3A",
+      "textoSuave": "#55636F",
+      "acento": "#D9480F",
+      "acentoTexto": "#FFFFFF",
+      "textoAlt": "#F3F1EC",
+      "linha": "#DDE1E4"
+    },
+    "destaque": "cor",
+    "fontes": {
+      "titulo": { "familia": "Archivo", "arquivo": "archivo-800", "peso": 800 },
+      "subtitulo": { "familia": "IBM Plex Sans", "arquivo": "plexsans-600", "peso": 600 },
+      "corpo": { "familia": "IBM Plex Sans", "arquivo": "plexsans-400", "peso": 400 },
+      "corpoForte": { "familia": "IBM Plex Sans", "arquivo": "plexsans-600", "peso": 600 },
+      "mono": { "familia": "IBM Plex Mono", "arquivo": "plexmono-500", "peso": 500 }
+    }
+  },
+  "pessoal": {
+    "nome": "Aliff Stefano",
+    "conceito": "Editorial de revista: papel creme, serifa marcante e terracota. Primeira pessoa, história e opinião.",
+    "handles": { "padrao": "@aliffstefano" },
+    "cores": {
+      "fundo": "#F6F1EA",
+      "fundoAlt": "#2B211C",
+      "texto": "#231C18",
+      "textoSuave": "#6B5E55",
+      "acento": "#B5472A",
+      "acentoTexto": "#FFFFFF",
+      "textoAlt": "#F6F1EA",
+      "linha": "#E4D9CC"
+    },
+    "destaque": "cor",
+    "fontes": {
+      "titulo": { "familia": "Fraunces", "arquivo": "fraunces-700", "peso": 700 },
+      "subtitulo": { "familia": "Fraunces", "arquivo": "fraunces-400", "peso": 400 },
+      "corpo": { "familia": "Inter", "arquivo": "inter-400", "peso": 400 },
+      "corpoForte": { "familia": "Inter", "arquivo": "inter-600", "peso": 600 }
+    }
+  }
+}

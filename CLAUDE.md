@@ -23,6 +23,7 @@ Nunca misture o tom de um perfil com outro.
 - `conhecimento/playbook-instagram.md` — como o algoritmo distribui, métricas que importam, formatos.
 - `conhecimento/ganchos-e-ctas.md` — banco de ganchos, CTAs e estruturas de copy.
 - `conhecimento/regras-nicho.md` — cuidados legais/éticos por nicho (trânsito, CREA, publicidade).
+- `conhecimento/anti-cliches.md` — frases e visuais genéricos proibidos. **Checar antes de toda entrega.**
 
 ## Comandos (skills) disponíveis
 
@@ -35,6 +36,7 @@ Nunca misture o tom de um perfil com outro.
 | `/gerador-engajamento` | Enquetes, caixinhas, legendas com CTA, carrosséis salváveis |
 | `/sistema-diario` | O que fazer HOJE em 20 minutos |
 | `/calendario` | Calendário semanal/mensal de postagens |
+| `/carrossel-visual` | Carrossel pronto em imagem (PNGs 1080×1350 com a identidade do perfil) + legenda |
 
 ## Economia de tokens — uso de agentes
 
@@ -58,6 +60,7 @@ Regras:
 
 - **Reels**: gancho falado (0–3s) + texto na tela + cenas + CTA + legenda + 3–5 hashtags.
 - **Carrossel**: capa com promessa clara, 1 ideia por slide, último slide com CTA de salvar/compartilhar.
+  Quando for para postar, gerar as imagens com `/carrossel-visual` (`ferramentas/carrossel/`).
 - **Legenda**: primeira linha = gancho (aparece antes do "mais"); CTA no final; sem paredão de texto.
 - **Stories**: sempre com um sticker de interação (enquete, caixinha, quiz, slider ou link).
 - Use tabela quando houver várias ideias. Marque `[PREENCHER]` onde faltar dado real.
