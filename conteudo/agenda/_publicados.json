@@ -163,5 +163,18 @@
  "2026-11-12|cfcinteligente|conteudo/artes/2026-11-12/cfcint-cobranca_ENQUETE.png": {
   "status": "publicado",
   "quando": "2026-11-12 08:05"
+ },
+ "2026-11-12|autoescola-eldorado|conteudo/artes/2026-11-12/autoescola-eldorado-2-duvida_CAIXINHA.png": {
+  "status": "falhou",
+  "quando": "2026-11-12 12:32",
+  "motivo": "o serviço disse ok, mas o story não apareceu na conta"
+ },
+ "2026-11-12|autoescola-caarapo|conteudo/artes/2026-11-12/autoescola-caarapo-2-duvida_CAIXINHA.png": {
+  "status": "publicado",
+  "quando": "2026-11-12 12:36"
+ },
+ "2026-11-12|autoescola-itaquirai|conteudo/artes/2026-11-12/autoescola-itaquirai-2-duvida_CAIXINHA.png": {
+  "status": "publicado",
+  "quando": "2026-11-12 12:38"
  }
 }
