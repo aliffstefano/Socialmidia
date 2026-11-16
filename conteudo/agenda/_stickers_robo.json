@@ -251,5 +251,135 @@
    "url": "https://www.cfcinteligente.com.br",
    "text": "Peça uma demonstração"
   }
+ ],
+ "placa-estacionar_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Qual é essa placa?",
+   "options": [
+    "Proibido estacionar",
+    "Proibido parar e estacionar"
+   ]
+  }
+ ],
+ "placas_SLIDER.png": [
+  {
+   "type": "slider",
+   "question": "Quanto você já sabe de placas?",
+   "emoji": "💯"
+  }
+ ],
+ "mito-chinelo_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Mito ou verdade?",
+   "options": [
+    "Mito",
+    "Verdade"
+   ]
+  }
+ ],
+ "1-resposta-chinelo.png": [],
+ "2-medo-prova_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Medo na prova?",
+   "options": [
+    "Ladeira",
+    "Nervosismo",
+    "Trânsito"
+   ]
+  }
+ ],
+ "1-feriado_LINK.png": [
+  {
+   "type": "link",
+   "url": "WHATSAPP",
+   "text": "Deixe sua mensagem"
+  }
+ ],
+ "2-reprovar_SLIDER.png": [
+  {
+   "type": "slider",
+   "question": "Quanto medo de reprovar?",
+   "emoji": "😱"
+  }
+ ],
+ "whatsapp_LINK.png": [
+  {
+   "type": "link",
+   "url": "WHATSAPP",
+   "text": "Chamar no WhatsApp"
+  }
+ ],
+ "sonho_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "O que você sonha em dirigir?",
+   "options": [
+    "Carro",
+    "Moto",
+    "Caminhão",
+    "Ônibus"
+   ]
+  }
+ ],
+ "eng-1-orcamento_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "O que mais estoura?",
+   "options": [
+    "Mudar o projeto no meio",
+    "Trocar a cor da fachada"
+   ]
+  }
+ ],
+ "eng-2-orcamento_LINK.png": [
+  {
+   "type": "link",
+   "url": "WHATSAPP",
+   "text": "Vou construir"
+  }
+ ],
+ "eng-1-fgts_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Mito ou verdade?",
+   "options": [
+    "Mito",
+    "Verdade"
+   ]
+  }
+ ],
+ "eng-2-fgts-resposta.png": [],
+ "eng-coragem_CAIXINHA.png": [
+  {
+   "type": "question",
+   "question": "Sua pergunta sobre obra"
+  }
+ ],
+ "cfcint-mesa_CAIXINHA.png": [
+  {
+   "type": "question",
+   "question": "Qual tarefa você tiraria da sua mesa?"
+  }
+ ],
+ "cfcint-instrutor_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Você já faz isso?",
+   "options": [
+    "Sim",
+    "Não, é no papel",
+    "Não, é no WhatsApp"
+   ]
+  }
+ ],
+ "cfcint-financeiro_LINK.png": [
+  {
+   "type": "link",
+   "url": "https://www.cfcinteligente.com.br",
+   "text": "Peça uma demonstração"
+  }
  ]
 }

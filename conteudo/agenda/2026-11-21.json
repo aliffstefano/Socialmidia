@@ -1,0 +1,58 @@
+{
+ "_aprovado": false,
+ "autoescola-eldorado": {
+  "nome": "Nova Alvorada Eldorado",
+  "para": "DYALOG_ELDORADO",
+  "stories": [
+   {
+    "hora": "10:00",
+    "arte": "conteudo/artes/2026-11-21/autoescola-eldorado-whatsapp_LINK.png",
+    "sticker": "Link",
+    "opcoes": "Link: WhatsApp da unidade · Texto: Chamar no WhatsApp",
+    "codigo": "21/11-A1"
+   }
+  ],
+  "obs": "Eldorado fechada hoje: o robô posta, respostas na segunda."
+ },
+ "autoescola-caarapo": {
+  "nome": "Nova Alvorada Caarapó",
+  "para": "DYALOG_CAARAPO",
+  "stories": [
+   {
+    "hora": "10:00",
+    "arte": "conteudo/artes/2026-11-21/autoescola-caarapo-whatsapp_LINK.png",
+    "sticker": "Link",
+    "opcoes": "Link: WhatsApp da unidade · Texto: Chamar no WhatsApp",
+    "codigo": "21/11-A1"
+   }
+  ],
+  "obs": "Eldorado fechada hoje: o robô posta, respostas na segunda."
+ },
+ "autoescola-itaquirai": {
+  "nome": "Nova Alvorada Itaquiraí",
+  "para": "DYALOG_ITAQUIRAI",
+  "stories": [
+   {
+    "hora": "10:00",
+    "arte": "conteudo/artes/2026-11-21/autoescola-itaquirai-whatsapp_LINK.png",
+    "sticker": "Link",
+    "opcoes": "Link: WhatsApp da unidade · Texto: Chamar no WhatsApp",
+    "codigo": "21/11-A1"
+   }
+  ],
+  "obs": "Eldorado fechada hoje: o robô posta, respostas na segunda."
+ },
+ "cfcinteligente": {
+  "nome": "@cfcinteligente",
+  "para": "DYALOG_NUMERO",
+  "stories": [
+   {
+    "hora": "10:00",
+    "arte": "conteudo/artes/2026-11-21/cfcint-financeiro_LINK.png",
+    "sticker": "Link",
+    "opcoes": "Link: www.cfcinteligente.com.br · Texto: Peça uma demonstração",
+    "codigo": "21/11-C1"
+   }
+  ]
+ }
+}

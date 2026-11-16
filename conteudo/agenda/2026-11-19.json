@@ -1,0 +1,76 @@
+{
+ "_aprovado": false,
+ "autoescola-eldorado": {
+  "nome": "Nova Alvorada Eldorado",
+  "para": "DYALOG_ELDORADO",
+  "stories": [
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-11-19/autoescola-eldorado-1-resposta-chinelo.png",
+    "sticker": "Nenhum",
+    "opcoes": "",
+    "codigo": "19/11-A1"
+   },
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-19/autoescola-eldorado-2-medo-prova_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Ladeira / Nervosismo / Trânsito",
+    "codigo": "19/11-A2"
+   }
+  ]
+ },
+ "autoescola-caarapo": {
+  "nome": "Nova Alvorada Caarapó",
+  "para": "DYALOG_CAARAPO",
+  "stories": [
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-11-19/autoescola-caarapo-1-resposta-chinelo.png",
+    "sticker": "Nenhum",
+    "opcoes": "",
+    "codigo": "19/11-A1"
+   },
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-19/autoescola-caarapo-2-medo-prova_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Ladeira / Nervosismo / Trânsito",
+    "codigo": "19/11-A2"
+   }
+  ]
+ },
+ "autoescola-itaquirai": {
+  "nome": "Nova Alvorada Itaquiraí",
+  "para": "DYALOG_ITAQUIRAI",
+  "stories": [
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-11-19/autoescola-itaquirai-1-resposta-chinelo.png",
+    "sticker": "Nenhum",
+    "opcoes": "",
+    "codigo": "19/11-A1"
+   },
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-19/autoescola-itaquirai-2-medo-prova_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Ladeira / Nervosismo / Trânsito",
+    "codigo": "19/11-A2"
+   }
+  ]
+ },
+ "cfcinteligente": {
+  "nome": "@cfcinteligente",
+  "para": "DYALOG_NUMERO",
+  "stories": [
+   {
+    "hora": "08:00",
+    "arte": "conteudo/artes/2026-11-19/cfcint-instrutor_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Sim / Não, é no papel / Não, é no WhatsApp",
+    "codigo": "19/11-C1"
+   }
+  ]
+ }
+}

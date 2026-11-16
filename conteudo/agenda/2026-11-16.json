@@ -1,0 +1,62 @@
+{
+ "_aprovado": false,
+ "autoescola-eldorado": {
+  "nome": "Nova Alvorada Eldorado",
+  "para": "DYALOG_ELDORADO",
+  "stories": [
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-16/autoescola-eldorado-placa-estacionar_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Proibido estacionar ✅(correta) / Proibido parar e estacionar",
+    "codigo": "16/11-A1"
+   }
+  ]
+ },
+ "autoescola-caarapo": {
+  "nome": "Nova Alvorada Caarapó",
+  "para": "DYALOG_CAARAPO",
+  "stories": [
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-16/autoescola-caarapo-placa-estacionar_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Proibido estacionar ✅(correta) / Proibido parar e estacionar",
+    "codigo": "16/11-A1"
+   }
+  ]
+ },
+ "autoescola-itaquirai": {
+  "nome": "Nova Alvorada Itaquiraí",
+  "para": "DYALOG_ITAQUIRAI",
+  "stories": [
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-16/autoescola-itaquirai-placa-estacionar_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Proibido estacionar ✅(correta) / Proibido parar e estacionar",
+    "codigo": "16/11-A1"
+   }
+  ]
+ },
+ "eng.aliff": {
+  "nome": "@eng.aliff",
+  "para": "DYALOG_NUMERO",
+  "stories": [
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-16/eng-1-orcamento_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Mudar o projeto no meio ✅ / Trocar a cor da fachada",
+    "codigo": "16/11-E1"
+   },
+   {
+    "hora": "13:00",
+    "arte": "conteudo/artes/2026-11-16/eng-2-orcamento_LINK.png",
+    "sticker": "Link",
+    "opcoes": "Link: seu WhatsApp · Texto: Vou construir",
+    "codigo": "16/11-E2"
+   }
+  ]
+ }
+}
