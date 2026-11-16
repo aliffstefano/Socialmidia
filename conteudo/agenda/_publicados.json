@@ -262,5 +262,10 @@
  "2026-11-16|eng.aliff|conteudo/artes/2026-11-16/eng-1-orcamento_ENQUETE.png": {
   "status": "publicado",
   "quando": "2026-11-16 12:39"
+ },
+ "2026-11-16|eng.aliff|conteudo/artes/2026-11-16/eng-2-orcamento_LINK.png": {
+  "status": "falhou",
+  "quando": "2026-11-16 13:02",
+  "motivo": "Remote end closed connection without response"
  }
 }
