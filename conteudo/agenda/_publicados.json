@@ -267,5 +267,20 @@
   "status": "falhou",
   "quando": "2026-11-16 13:02",
   "motivo": "Remote end closed connection without response"
+ },
+ "2026-11-20|autoescola-eldorado|conteudo/artes/2026-11-20/autoescola-eldorado-1-feriado_LINK.png": {
+  "status": "falhou",
+  "quando": "2026-11-20 09:35",
+  "motivo": "não consegui mover o adesivo para o y pedido"
+ },
+ "2026-11-20|autoescola-caarapo|conteudo/artes/2026-11-20/autoescola-caarapo-1-feriado_LINK.png": {
+  "status": "falhou",
+  "quando": "2026-11-20 09:38",
+  "motivo": "não consegui mover o adesivo para o y pedido"
+ },
+ "2026-11-20|autoescola-itaquirai|conteudo/artes/2026-11-20/autoescola-itaquirai-1-feriado_LINK.png": {
+  "status": "falhou",
+  "quando": "2026-11-20 09:41",
+  "motivo": "não consegui mover o adesivo para o y pedido"
  }
 }
