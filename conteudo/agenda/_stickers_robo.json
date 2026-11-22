@@ -381,5 +381,143 @@
    "url": "https://www.cfcinteligente.com.br",
    "text": "Peça uma demonstração"
   }
+ ],
+ "placa-esquerda_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Qual é essa placa?",
+   "options": [
+    "Proibido virar à esquerda",
+    "Proibido virar à direita"
+   ]
+  }
+ ],
+ "maos_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Posição das mãos?",
+   "options": [
+    "9h15",
+    "10h10"
+   ]
+  }
+ ],
+ "1-resposta-maos.png": [],
+ "1-resposta-faixa.png": [],
+ "2-cor-placa-resposta.png": [],
+ "eng-2-obra-grande-resposta.png": [],
+ "2-mito-faixa_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Mito ou verdade?",
+   "options": [
+    "Mito",
+    "Verdade"
+   ]
+  }
+ ],
+ "1-frio_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Frio na barriga?",
+   "options": [
+    "Sim",
+    "Não"
+   ]
+  }
+ ],
+ "1-cor-placa_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Qual a cor?",
+   "options": [
+    "Amarela",
+    "Vermelha"
+   ]
+  }
+ ],
+ "viagem_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Vai viajar de carro?",
+   "options": [
+    "Sim",
+    "Não",
+    "Ainda não sei"
+   ]
+  }
+ ],
+ "eng-1-trava_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "O que te trava?",
+   "options": [
+    "Medo de estourar o orçamento",
+    "Burocracia na prefeitura"
+   ]
+  }
+ ],
+ "eng-2-trava_LINK.png": [
+  {
+   "type": "link",
+   "url": "WHATSAPP",
+   "text": "Quero sair do aluguel"
+  }
+ ],
+ "eng-1-obra-grande_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Mito ou verdade?",
+   "options": [
+    "Mito",
+    "Verdade"
+   ]
+  }
+ ],
+ "eng-1-terreno-checar_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "O que checar primeiro?",
+   "options": [
+    "Documentação do terreno",
+    "Se a vista é bonita"
+   ]
+  }
+ ],
+ "eng-2-terreno-checar_LINK.png": [
+  {
+   "type": "link",
+   "url": "WHATSAPP",
+   "text": "Vou comprar terreno"
+  }
+ ],
+ "cfcint-financeiro_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Financeiro em dia?",
+   "options": [
+    "Sim, em tempo real",
+    "Mais ou menos",
+    "Só no fim do mês"
+   ]
+  }
+ ],
+ "cfcint-faltas_ENQUETE.png": [
+  {
+   "type": "poll",
+   "question": "Aluno falta?",
+   "options": [
+    "Sim, muito",
+    "Às vezes",
+    "Quase nunca"
+   ]
+  }
+ ],
+ "cfcint-demo2_LINK.png": [
+  {
+   "type": "link",
+   "url": "https://www.cfcinteligente.com.br",
+   "text": "Peça uma demonstração"
+  }
  ]
 }

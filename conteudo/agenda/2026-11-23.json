@@ -1,0 +1,62 @@
+{
+ "_aprovado": false,
+ "autoescola-eldorado": {
+  "nome": "Nova Alvorada Eldorado",
+  "para": "DYALOG_ELDORADO",
+  "stories": [
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-23/autoescola-eldorado-placa-esquerda_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Proibido virar à esquerda ✅ / Proibido virar à direita",
+    "codigo": "23/11-A1"
+   }
+  ]
+ },
+ "autoescola-caarapo": {
+  "nome": "Nova Alvorada Caarapó",
+  "para": "DYALOG_CAARAPO",
+  "stories": [
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-23/autoescola-caarapo-placa-esquerda_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Proibido virar à esquerda ✅ / Proibido virar à direita",
+    "codigo": "23/11-A1"
+   }
+  ]
+ },
+ "autoescola-itaquirai": {
+  "nome": "Nova Alvorada Itaquiraí",
+  "para": "DYALOG_ITAQUIRAI",
+  "stories": [
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-23/autoescola-itaquirai-placa-esquerda_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Proibido virar à esquerda ✅ / Proibido virar à direita",
+    "codigo": "23/11-A1"
+   }
+  ]
+ },
+ "eng.aliff": {
+  "nome": "@eng.aliff",
+  "para": "DYALOG_NUMERO",
+  "stories": [
+   {
+    "hora": "12:30",
+    "arte": "conteudo/artes/2026-11-23/eng-1-trava_ENQUETE.png",
+    "sticker": "Enquete",
+    "opcoes": "Opções: Medo de estourar o orçamento / Burocracia na prefeitura",
+    "codigo": "23/11-E1"
+   },
+   {
+    "hora": "13:00",
+    "arte": "conteudo/artes/2026-11-23/eng-2-trava_LINK.png",
+    "sticker": "Link",
+    "opcoes": "Link: seu WhatsApp · Texto: Quero sair do aluguel",
+    "codigo": "23/11-E2"
+   }
+  ]
+ }
+}
