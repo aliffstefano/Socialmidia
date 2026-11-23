@@ -295,5 +295,10 @@
   "status": "publicado",
   "quando": "2026-11-23 16:13",
   "motivo": "postado à mão pela equipe (plano B)"
+ },
+ "2026-11-23|autoescola-itaquirai|conteudo/artes/2026-11-23/autoescola-itaquirai-placa-esquerda_ENQUETE.png": {
+  "status": "falhou",
+  "quando": "2026-11-23 16:20",
+  "motivo": "elemento não apareceu: id/done_button$"
  }
 }
