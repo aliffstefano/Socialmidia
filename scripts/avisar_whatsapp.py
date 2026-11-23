@@ -48,6 +48,13 @@ def enviar(texto, para="DYALOG_NUMERO", imagem=None):
                 break
             print(f"{para}: HTTP {e.code}, nova tentativa em {espera}s")
             time.sleep(espera)
+        except (urllib.error.URLError, ConnectionError, TimeoutError, OSError) as e:
+            # queda de conexão não pode derrubar quem chamou (ex.: o robô no meio da fila)
+            resp = {"erro": type(e).__name__, "mensagem": str(e)[:200]}
+            if espera is None:
+                break
+            print(f"{para}: {type(e).__name__}, nova tentativa em {espera}s")
+            time.sleep(espera)
     ok = bool(resp.get("sucesso"))
     print(f"{para}: " + ("enviado" if ok else f"falhou: {resp.get('erro')} {resp.get('mensagem')}"))
     return ok
