@@ -183,6 +183,21 @@ def plano_b(data, perfil, cfg, s, motivo):
         enviar(f"⚠️ Robô falhou: {cfg.get('nome', perfil)} {s['hora']} ({motivo}). Mandei a arte para a equipe postar.", "DYALOG_NUMERO")
 
 
+def sem_registro(perfil, feitos, janela=30):
+    """Stories no ar nos últimos `janela` min que o _publicados não explica (ex.: envio que continuou no
+    celular depois que o robô caiu). Se houver, NÃO publica de novo: risco de duplicar."""
+    try:
+        dados = get(f"{CONTAS[CFG[perfil]['ig']]}/stories", fields="timestamp").get("data", [])
+    except Exception:
+        return 0
+    agora = datetime.now(timezone.utc)
+    no_ar = sum(1 for d in dados if agora - datetime.strptime(d["timestamp"], "%Y-%m-%dT%H:%M:%S%z") < timedelta(minutes=janela))
+    limite = (datetime.now(MS) - timedelta(minutes=janela)).strftime("%Y-%m-%d %H:%M")
+    registrados = sum(1 for k, v in feitos.items() if k.split("|")[1] == perfil and v.get("status") == "publicado"
+                      and v.get("quando", "") >= limite)
+    return no_ar - registrados
+
+
 def main():
     args = dict(zip(sys.argv[1::2], sys.argv[2::2]))
     agora = datetime.now(MS)
@@ -207,6 +222,12 @@ def main():
         if minuto - _m(hora) > ATRASO_MAX:
             feitos[chave] = {"status": "perdido", "quando": quando}
             enviar(f"⏭️ Robô não postou {cfg.get('nome', perfil)} das {hora}: passou do horário.", "DYALOG_NUMERO")
+            continue
+        if sem_registro(perfil, feitos) > 0:
+            feitos[chave] = {"status": "conferir", "quando": quando,
+                             "motivo": "tem story recente no ar sem registro; não publiquei para não duplicar"}
+            enviar(f"⚠️ Robô não postou {cfg.get('nome', perfil)} das {hora}: já tem um story recente no ar que eu não "
+                   "registrei (pode ser este mesmo). Confira a conta; se faltar, poste à mão.", "DYALOG_NUMERO")
             continue
         stickers = stickers_de(perfil, s["arte"])
         if stickers is None:
