@@ -304,5 +304,24 @@
  "2026-11-23|eng.aliff|conteudo/artes/2026-11-23/eng-2-trava_LINK.png": {
   "status": "publicado",
   "quando": "2026-11-23 16:21"
+ },
+ "2026-11-24|autoescola-eldorado|conteudo/artes/2026-11-24/autoescola-eldorado-maos_ENQUETE.png": {
+  "status": "falhou",
+  "quando": "2026-11-24 08:02",
+  "motivo": "não consegui mover o adesivo para o y pedido"
+ },
+ "2026-11-24|autoescola-caarapo|conteudo/artes/2026-11-24/autoescola-caarapo-maos_ENQUETE.png": {
+  "status": "falhou",
+  "quando": "2026-11-24 08:04",
+  "motivo": "não consegui mover o adesivo para o y pedido"
+ },
+ "2026-11-24|autoescola-itaquirai|conteudo/artes/2026-11-24/autoescola-itaquirai-maos_ENQUETE.png": {
+  "status": "falhou",
+  "quando": "2026-11-24 08:05",
+  "motivo": "elemento não apareceu: id/done_button$"
+ },
+ "2026-11-24|cfcinteligente|conteudo/artes/2026-11-24/cfcint-financeiro_ENQUETE.png": {
+  "status": "publicado",
+  "quando": "2026-11-24 08:06"
  }
 }
