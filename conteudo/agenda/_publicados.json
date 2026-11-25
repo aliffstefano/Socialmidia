@@ -335,5 +335,24 @@
  "2026-11-25|autoescola-itaquirai|conteudo/artes/2026-11-25/autoescola-itaquirai-1-resposta-maos.png": {
   "status": "publicado",
   "quando": "2026-11-25 08:04"
+ },
+ "2026-11-25|autoescola-eldorado|conteudo/artes/2026-11-25/autoescola-eldorado-2-mito-faixa_ENQUETE.png": {
+  "status": "publicado",
+  "quando": "2026-11-25 12:32"
+ },
+ "2026-11-25|autoescola-caarapo|conteudo/artes/2026-11-25/autoescola-caarapo-2-mito-faixa_ENQUETE.png": {
+  "status": "falhou",
+  "quando": "2026-11-25 12:34",
+  "motivo": "não consegui posicionar o adesivo no y pedido"
+ },
+ "2026-11-25|autoescola-itaquirai|conteudo/artes/2026-11-25/autoescola-itaquirai-2-mito-faixa_ENQUETE.png": {
+  "status": "falhou",
+  "quando": "2026-11-25 12:37",
+  "motivo": "elemento não apareceu: id/done_button$"
+ },
+ "2026-11-25|eng.aliff|conteudo/artes/2026-11-25/eng-1-obra-grande_ENQUETE.png": {
+  "status": "falhou",
+  "quando": "2026-11-25 12:38",
+  "motivo": "não consegui posicionar o adesivo no y pedido"
  }
 }
