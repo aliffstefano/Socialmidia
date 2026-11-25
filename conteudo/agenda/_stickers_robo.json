@@ -519,5 +519,19 @@
    "url": "https://www.cfcinteligente.com.br",
    "text": "Peça uma demonstração"
   }
+ ],
+ "aprovados-1_SLIDER.png": [
+  {
+   "type": "slider",
+   "question": "Parabéns, motoristas!",
+   "emoji": "🎉"
+  }
+ ],
+ "aprovados-2_LINK.png": [
+  {
+   "type": "link",
+   "url": "WHATSAPP",
+   "text": "Quero ser o próximo"
+  }
  ]
 }
