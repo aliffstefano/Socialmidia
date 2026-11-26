@@ -358,5 +358,25 @@
  "2026-11-25|eng.aliff|conteudo/artes/2026-11-25/eng-2-obra-grande-resposta.png": {
   "status": "publicado",
   "quando": "2026-11-25 19:02"
+ },
+ "2026-11-26|autoescola-eldorado|conteudo/artes/2026-11-26/autoescola-eldorado-1-resposta-faixa.png": {
+  "status": "falhou",
+  "quando": "2026-11-26 08:02",
+  "motivo": "não consegui trocar para a conta @cfcnovaalvoradaeldorado; story não publicado"
+ },
+ "2026-11-26|autoescola-caarapo|conteudo/artes/2026-11-26/autoescola-caarapo-1-resposta-faixa.png": {
+  "status": "falhou",
+  "quando": "2026-11-26 08:03",
+  "motivo": "não consegui trocar para a conta @cfcnovaalvoradacaarapo; story não publicado"
+ },
+ "2026-11-26|autoescola-itaquirai|conteudo/artes/2026-11-26/autoescola-itaquirai-1-resposta-faixa.png": {
+  "status": "falhou",
+  "quando": "2026-11-26 08:04",
+  "motivo": "não consegui trocar para a conta @cfcnovaalvoradaitaquirai; story não publicado"
+ },
+ "2026-11-26|cfcinteligente|conteudo/artes/2026-11-26/cfcint-faltas_ENQUETE.png": {
+  "status": "falhou",
+  "quando": "2026-11-26 08:04",
+  "motivo": "não consegui trocar para a conta @cfcinteligente; story não publicado"
  }
 }
