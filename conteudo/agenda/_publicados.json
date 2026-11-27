@@ -391,5 +391,19 @@
  "2026-11-26|autoescola-itaquirai|conteudo/artes/2026-11-26/autoescola-itaquirai-2-duvida_CAIXINHA.png": {
   "status": "publicado",
   "quando": "2026-11-26 12:38"
+ },
+ "2026-11-27|autoescola-eldorado|conteudo/artes/2026-11-27/autoescola-eldorado-1-frio_ENQUETE.png": {
+  "status": "publicado",
+  "quando": "2026-11-27 08:02"
+ },
+ "2026-11-27|autoescola-caarapo|conteudo/artes/2026-11-27/autoescola-caarapo-1-frio_ENQUETE.png": {
+  "status": "falhou",
+  "quando": "2026-11-27 08:04",
+  "motivo": "o serviço disse ok, mas o story não apareceu na conta"
+ },
+ "2026-11-27|autoescola-itaquirai|conteudo/artes/2026-11-27/autoescola-itaquirai-1-frio_ENQUETE.png": {
+  "status": "falhou",
+  "quando": "2026-11-27 08:10",
+  "motivo": "elemento não apareceu: id/done_button$"
  }
 }
