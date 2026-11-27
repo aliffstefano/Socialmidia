@@ -405,5 +405,21 @@
   "status": "falhou",
   "quando": "2026-11-27 08:10",
   "motivo": "elemento não apareceu: id/done_button$"
+ },
+ "2026-11-27|autoescola-eldorado|conteudo/artes/2026-11-27/autoescola-eldorado-2-whatsapp_LINK.png": {
+  "status": "publicado",
+  "quando": "2026-11-27 12:32"
+ },
+ "2026-11-27|autoescola-caarapo|conteudo/artes/2026-11-27/autoescola-caarapo-2-whatsapp_LINK.png": {
+  "status": "publicado",
+  "quando": "2026-11-27 12:36"
+ },
+ "2026-11-27|autoescola-itaquirai|conteudo/artes/2026-11-27/autoescola-itaquirai-2-whatsapp_LINK.png": {
+  "status": "publicado",
+  "quando": "2026-11-27 12:42"
+ },
+ "2026-11-27|eng.aliff|conteudo/artes/2026-11-27/eng-1-terreno-checar_ENQUETE.png": {
+  "status": "publicado",
+  "quando": "2026-11-27 12:46"
  }
 }
